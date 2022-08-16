@@ -1,1 +1,1 @@
-web: npm build && npm start -p $PORT
+web: npm run build && npm start -p $PORT
