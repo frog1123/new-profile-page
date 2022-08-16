@@ -32,8 +32,8 @@ export const Socials: FC = () => {
           SOCIALS
         </h1>
         <div className='w-[100%] px-[4px] md:px-[10px] grid gap-[4px] md:gap-[8px] md:grid-cols-2'>
-          {socials.map(SocialInfo => (
-            <Social {...SocialInfo} />
+          {socials.map((SocialInfo, index) => (
+            <Social {...SocialInfo} key={index} />
           ))}
         </div>
       </div>

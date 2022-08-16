@@ -21,7 +21,7 @@ export const ErrorPage: FC<ErrorPageProps> = ({ error, message, title }) => {
         <div className='flex my-auto'>
           <div className='grid grid-flow-row gap-[10px] place-items-center'>
             <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
-              <Image src={campsite} layout='responsive' />
+              <Image src={campsite} layout='responsive' alt='' />
             </div>
             <div className='grid grid-flow-row place-items-center'>
               <h1 className='text-white'>{`${error ? `${error} | ` : ''} ${message}`}</h1>

@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         <Links />
         <div className='m-auto'>
           <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
-            <Image src={umbrella} layout='responsive' />
+            <Image src={umbrella} layout='responsive' alt='' />
           </div>
         </div>
       </div>
