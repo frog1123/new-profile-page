@@ -12,7 +12,7 @@ export const ProfilePicture: FC = () => {
           <Image src={palm_tree} className='float-animation' />
         </div>
         <div className='grid grid-flow-rows place-items-center'>
-          <div className='w-[80px] h-[80px] md:w-[140px] md:h-[140px] lg:w-[200px] lg:h-[200px] disable-select'>
+          <div className='w-[80px] h-[80px] md:w-[140px] md:h-[140px] lg:w-[200px] lg:h-[200px] disable-select hover:rotate-[360deg]'>
             <Image src={frog_pfp} className='rounded-[50%]' />
           </div>
           <h1 className='gradient-text text-[16px] md:text-[24px] lg:text-[32px]'>frogdude1123</h1>

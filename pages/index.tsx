@@ -1,10 +1,16 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import { useEffect } from 'react';
 
 import { ProfilePicture } from '@components/ProfilePicture';
 import { AboutMe } from '@components/AboutMe';
 import { Socials } from '@components/Socials';
+import { FeaturedVideo } from '@components/FeatureVideo';
+import { Links } from '@components/Links';
+import { Explore } from '@components/Explore';
+
+import umbrella from '@public/umbrella.svg';
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -19,14 +25,22 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className='pb-[30px]'>
       <Head>
         <title>frogdude1123</title>
       </Head>
       <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] grid grid-flow-row gap-[10px] md:gap-[15px] lg:gap-[20px]'>
         <ProfilePicture />
+        <Explore />
         <AboutMe />
         <Socials />
+        <FeaturedVideo />
+        <Links />
+        <div className='m-auto'>
+          <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
+            <Image src={umbrella} layout='responsive' />
+          </div>
+        </div>
       </div>
     </div>
   );

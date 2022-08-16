@@ -8,6 +8,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
 #__next {
@@ -16,6 +17,10 @@ body {
 
 * {
   transition: 250ms;
+}
+
+a {
+  text-decoration: none;
 }
 
 .disable-select {
@@ -75,6 +80,12 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.dag-gradient {
+  background-image: linear-gradient(45deg, #d9ed92 0%, #b5e48c 100%);
+  background-image: -webkit-linear-gradient(45deg, #d9ed92 0%, #b5e48c 100%);
+  background-image: -moz-linear-gradient(45deg, #d9ed92 0%, #b5e48c 100%);
 }
 
 .gradient-border {

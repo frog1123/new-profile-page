@@ -28,7 +28,9 @@ export const Socials: FC = () => {
   return (
     <div className='bg-[#333333] flex justify-center md:pt-[4px] pb-[10px] rounded-[10px] md:rounded-[20px]'>
       <div className='grid grid-flow-row place-items-center w-[100%]'>
-        <h1 className='gradient-text text-[24px] font-bold'>SOCIALS</h1>
+        <h1 id='socials' className='gradient-text text-[24px] font-bold'>
+          SOCIALS
+        </h1>
         <div className='w-[100%] px-[4px] md:px-[10px] grid gap-[4px] md:gap-[8px] md:grid-cols-2'>
           {socials.map(SocialInfo => (
             <Social {...SocialInfo} />
