@@ -74,7 +74,7 @@ export const AudioPlayerMini: FC = () => {
       </audio>
       <div className='grid grid-cols-1 md:grid-cols-3 md:gap-[100px]'>
         <div className='flex'>
-          <span className='gradient-text h-[max-content] my-auto'>🎵 jhove - time flies</span>
+          <span className='hidden md:block gradient-text h-[max-content] my-auto'>🎵 jhove - time flies</span>
         </div>
         <div className='grid grid-flow-col place-items-center'>
           <AudioButton icon='back' action={() => skipAudio('back')} />
