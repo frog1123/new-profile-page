@@ -4,7 +4,7 @@ import { ShowHideText } from '@components/ShowHideText';
 
 export const AboutMe: FC = () => {
   return (
-    <div className='bg-[#333333] flex justify-center pt-[15px] md:pt-[30px] pb-[10px] rounded-[10px] md:rounded-[20px]'>
+    <div className='bg-[#333333] flex justify-center pt-[5px] pb-[10px] rounded-[10px] md:rounded-[20px]'>
       <div className='grid grid-flow-row place-items-center w-[100%]'>
         <h1 id='about-me' className='gradient-text text-[24px] font-bold'>
           ABOUT ME

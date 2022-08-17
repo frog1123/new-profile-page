@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+.bar-of-progress {
+  z-index: 1123;
+}
+
 .disable-select {
   -webkit-user-select: none;
   -moz-user-select: none;

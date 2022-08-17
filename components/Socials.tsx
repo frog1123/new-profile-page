@@ -16,7 +16,7 @@ const socials = [
   { image: discord_icon, text: 'frogdude1124#3616' },
   { image: discord_icon, text: 'frogdude1125#3709' },
   { image: github_icon, text: 'frog1123', url: 'https://github.com/frog1123' },
-  { image: npm_icon, text: 'frogdude1123', url: 'https://github.com/https://www.npmjs.com/~frogdude1123' },
+  { image: npm_icon, text: 'frogdude1123', url: 'https://www.npmjs.com/~frogdude1123' },
   { image: youtube_icon, text: 'frogdude1123', url: 'https://www.youtube.com/channel/UCNTeMcd7BDOuNrVf1yRGZlA' },
   { image: steam_icon, text: 'frogdude1123', url: 'https://steamcommunity.com/id/frogdude1123' },
   { image: spotify_icon, text: 'frogdude1123', url: 'https://open.spotify.com/user/ckenvyd4xokwet9bbir3hfxn9?si=bbda1b6ab230463b' },
