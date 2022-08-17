@@ -182,3 +182,23 @@ button {
     transform: rotate(0deg);
   }
 }
+
+#volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #b5e48c;
+  outline: none;
+  border-radius: 10px;
+}
+
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #b5e48c;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
