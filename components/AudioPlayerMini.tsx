@@ -19,6 +19,10 @@ export const AudioPlayerMini: FC = () => {
     volume.oninput = function () {
       audioVolume = this.value / 100;
       audio.volume = this.value / 100;
+
+      document.getElementById('mute')?.classList.add('hidden');
+      document.getElementById('sound')?.classList.remove('hidden');
+      document.getElementById('sound')?.classList.add('block');
     };
   });
 
