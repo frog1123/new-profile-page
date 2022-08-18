@@ -48,22 +48,24 @@ export const AudioPlayerMini: FC = () => {
   };
 
   const muteAudio = () => {
-    console.log('mute');
-
+    const volume = document.getElementById('volume-slider') as any;
     const audio = document.getElementById('audio') as any;
     document.getElementById('sound')?.classList.add('hidden');
     document.getElementById('mute')?.classList.remove('hidden');
     document.getElementById('mute')?.classList.add('block');
 
     audio.volume = 0;
+    volume.value = 0;
   };
 
   const unmuteAudio = () => {
+    const volume = document.getElementById('volume-slider') as any;
     const audio = document.getElementById('audio') as any;
     document.getElementById('mute')?.classList.add('hidden');
     document.getElementById('sound')?.classList.remove('hidden');
     document.getElementById('sound')?.classList.add('block');
 
+    volume.value = audioVolume * 100;
     audio.volume = audioVolume;
   };
 
@@ -76,7 +78,7 @@ export const AudioPlayerMini: FC = () => {
         <div className='flex'>
           <span className='hidden md:block gradient-text h-[max-content] my-auto'>🎵 jhove - time flies</span>
         </div>
-        <div className='grid grid-flow-col place-items-center'>
+        <div className='grid grid-flow-col place-items-center gap-[20px] md:gap-0'>
           <AudioButton icon='back' action={() => skipAudio('back')} />
           <div className='grid place-items-center'>
             <AudioButton icon='play' action={playAudio} />

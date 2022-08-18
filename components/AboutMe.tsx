@@ -16,7 +16,9 @@ export const AboutMe: FC = () => {
         </p>
         <br />
         <div>
-          <ShowHideText title='stuff' content='TODO: add stuff later' centerTitle />
+          <ShowHideText title='stuff' centerTitle>
+            <h1>TODO: add stuff later</h1>
+          </ShowHideText>
         </div>
       </div>
     </div>

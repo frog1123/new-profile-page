@@ -2,18 +2,18 @@ import type { FC } from 'react';
 
 interface ShowHideTextProps {
   title: string;
-  content: string;
-  centerTitle: boolean;
+  centerTitle?: boolean;
+  children: any;
 }
 
-export const ShowHideText: FC<ShowHideTextProps> = ({ title, content, centerTitle }) => {
+export const ShowHideText: FC<ShowHideTextProps> = ({ title, centerTitle = false, children }) => {
   return (
     <div>
       <label className={`show-more flex ${centerTitle ? 'justify-center' : ''}`} htmlFor={`${title}-content`}>
         <span className='gradient-text select-none'>{title}</span>
       </label>
       <input id={`${title}-content`} type='checkbox' defaultChecked={true}></input>
-      <h1 className='no-scrollbar text-white'>{content}</h1>
+      <div className='no-scrollbar text-white'>{children}</div>
     </div>
   );
 };

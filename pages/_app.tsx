@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app';
 
 import ProgressBar from '@badrap/bar-of-progress';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   const { start, finish } = new ProgressBar({
     size: '2px',
     color: '#b5e48c',
@@ -17,6 +17,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   Router.events.on('routeChangeError', finish);
 
   return <Component {...pageProps} />;
-}
+};
 
-export default MyApp;
+export default App;

@@ -143,7 +143,7 @@ button {
 }
 
 .show-more + input:checked + * {
-  max-height: 20em;
+  max-height: 100em;
   overflow: auto;
   transition: max-height 1.5s, overflow 0.5s 0.5s;
 }
