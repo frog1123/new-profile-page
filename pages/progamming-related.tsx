@@ -64,6 +64,12 @@ const ProgammingRelated: NextPage = () => {
   return (
     <>
       <Head>
+        <meta property='og:title' content='frogdude1123' />
+        <meta property='og:description' content='progamming related' />
+        <meta property='og:url' content='https://frogdude1123.herokuapp.com/progamming-related' />
+        <meta property='og:image' content='https://frogdude1123.herokuapp.com/frog.png' />
+        <meta name='description' content='progamming related' />
+        <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>progamming-related 🖥️</title>
       </Head>
       <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] pb-[50px]'>
