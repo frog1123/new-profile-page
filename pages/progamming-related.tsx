@@ -64,7 +64,7 @@ const ProgammingRelated: NextPage = () => {
   return (
     <>
       <Head>
-        <title>progamming-related</title>
+        <title>progamming-related 🖥️</title>
       </Head>
       <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] pb-[50px]'>
         <div className='bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>

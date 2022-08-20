@@ -27,6 +27,9 @@ const Home: NextPage = () => {
   return (
     <div className='pb-[30px]'>
       <Head>
+        <meta property='og:title' content='frogdude1123' />
+        <meta property='og:url' content='https://frogdude1123.herokuapp.com/' />
+        <meta property='og:image' content='https://frogdude1123.herokuapp.com/frog.png' />
         <title>frogdude1123</title>
       </Head>
       <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] grid grid-flow-row gap-[10px] md:gap-[15px]'>

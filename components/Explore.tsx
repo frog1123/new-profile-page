@@ -3,7 +3,7 @@ import type { FC } from 'react';
 const FrogButton: FC<{ text: string; location: string }> = ({ text, location }) => {
   return (
     <a href={`#${location}`}>
-      <button className='dag-gradient rounded-[10px] hover:translate-y-[-8px] px-[4px] py-[2px] w-[100%] sm:w-[max-content]'>
+      <button className='dag-gradient rounded-[10px] sm:hover:translate-y-[-8px] px-[4px] py-[2px] w-[100%] sm:w-[max-content]'>
         <h2 className='text-white md:text-[18px]'>{text}</h2>
       </button>
     </a>
