@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import { ProfilePicture } from '@components/ProfilePicture';
 import { AboutMe } from '@components/AboutMe';
 import { Socials } from '@components/Socials';
-import { FeaturedVideo } from '@components/FeatureVideo';
+import { FeaturedVideo } from '@components/FeaturedVideo';
 import { Links } from '@components/Links';
 import { Explore } from '@components/Explore';
 

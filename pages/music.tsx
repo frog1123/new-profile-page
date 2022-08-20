@@ -1,13 +1,15 @@
 import { NextPage } from 'next';
 import type { FC } from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
 
 import { SongTab } from '@components/SongTab';
 
-import frog from '@public/frog.png';
+import six_dogs from '@public/audio_images/6_dogs.jpg';
+import umbrella from '@public/umbrella.svg';
 
 const Line: FC = () => {
-  return <div className='w-[99%] h-[2px] bg-[#707070] mx-auto rounded-[10px]'></div>;
+  return <div className='w-[100%] h-[2px] bg-[#707070] mx-auto rounded-[10px]'></div>;
 };
 
 const Music: NextPage = () => {
@@ -27,13 +29,36 @@ const Music: NextPage = () => {
           <div className='grid grid-flow-row place-items-center w-[100%]'>
             <h1 className='gradient-text text-[24px] font-bold'>MUSIC</h1>
 
-            <div className='w-[60%] bg-[#282828] p-[4px] rounded-[10px]'>
-              <h1 className='gradient-text text-[24px] font-bold'>w</h1>
-              <Line />
-              <SongTab image={frog} title='w' song='w' artist={['w']} producer={['w']} />
+            <div className='grid grid-flow-row gap-[20px] w-[100%] place-items-center'>
+              <div className='w-[98%] sm:w-[90%] md:w-[70%] bg-[#282828] p-[4px] rounded-[10px]'>
+                <h1 className='gradient-text text-[24px] font-bold'>cool</h1>
+                <Line />
+                <div className='pt-[4px]'>
+                  <SongTab image={six_dogs} title='Someone' song='Someone' artist={['6 dogs']} producer={['captaincrunch, nebarb']} />
+                  <SongTab image={six_dogs} title='No Savage' song='No_Savage' artist={['6 dogs']} producer={['Pretty Pacc']} />
+                  <SongTab title='MIA' song='MIA' artist={['shrimp']} producer={['MineSweepa']} />
+                </div>
+              </div>
+
+              <div className='w-[98%] sm:w-[90%] md:w-[70%] bg-[#282828] p-[4px] rounded-[10px]'>
+                <h1 className='gradient-text text-[24px] font-bold'>instrumentals</h1>
+                <Line />
+                <div className='pt-[4px]'>
+                  <SongTab title='time flies' song='time_flies' artist={['jhove']} producer={['idk']} />
+                  <SongTab title='Somewhere Away' song='Somewhere_Away' artist={['Goosetaf']} producer={['idk']} />
+                </div>
+              </div>
             </div>
 
-            <h2 className='text-white pt-[60px]'>I do not claim to own any of this music</h2>
+            <div className='text-center'>
+              <h2 className='text-white pt-[60px]'>I do not claim to own any of the music being used here</h2>
+            </div>
+          </div>
+        </div>
+
+        <div className='m-auto w-[max-content] pt-[50px]'>
+          <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
+            <Image src={umbrella} layout='responsive' alt='' />
           </div>
         </div>
       </div>

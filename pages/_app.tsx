@@ -1,7 +1,9 @@
 import '../styles/globals.css';
 import Router from 'next/router';
 import type { AppProps } from 'next/app';
+import { useState } from 'react';
 
+import { UserContext } from '../UserContext';
 import ProgressBar from '@badrap/bar-of-progress';
 
 const App = ({ Component, pageProps }: AppProps) => {
@@ -12,11 +14,20 @@ const App = ({ Component, pageProps }: AppProps) => {
     delay: 100
   });
 
+  const [value, setValue] = useState({
+    stopPlayingAudio: false,
+    currentlyPlaying: ''
+  });
+
   Router.events.on('routeChangeStart', start);
   Router.events.on('routeChangeComplete', finish);
   Router.events.on('routeChangeError', finish);
 
-  return <Component {...pageProps} />;
+  return (
+    <UserContext.Provider value={{ value, setValue }}>
+      <Component {...pageProps} />
+    </UserContext.Provider>
+  );
 };
 
 export default App;

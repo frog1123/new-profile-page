@@ -103,6 +103,7 @@ button {
 
 ::selection {
   background: #70ce29;
+  color: #fff;
 }
 
 .gradient-text::selection {
@@ -183,7 +184,7 @@ button {
   }
 }
 
-#volume-slider {
+.volume-slider {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
@@ -193,7 +194,7 @@ button {
   border-radius: 10px;
 }
 
-#volume-slider::-webkit-slider-thumb {
+.volume-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   background: #b5e48c;
