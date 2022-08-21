@@ -55,6 +55,7 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
     document.getElementById(`pause-${song}`)?.classList.remove('hidden');
     document.getElementById(`pause-${song}`)?.classList.add('block');
     setValue({ ...value, pauseCurrentlyPlaying: true, currentlyPlaying: [...value.currentlyPlaying, song] });
+    console.log(value);
 
     audio.play();
   };
