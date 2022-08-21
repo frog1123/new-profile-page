@@ -38,7 +38,7 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
     document.getElementById(`play-${song}`)?.classList.add('hidden');
     document.getElementById(`pause-${song}`)?.classList.remove('hidden');
     document.getElementById(`pause-${song}`)?.classList.add('block');
-    setValue({ currentlyPlaying: song, stopPlayingAudio: true });
+    setValue({ ...value, pauseCurrentlyPlaying: true, currentlyPlaying: [...value.currentlyPlaying, song] });
 
     audio.play();
   };
@@ -81,10 +81,6 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
     audio.volume = audioVolume;
   };
 
-  if (value.stopPlayingAudio) {
-    if (value.currentlyPlaying !== song) pauseAudio().then(() => setValue({ stopPlayingAudio: false }));
-  }
-
   return (
     <div className='bg-[#282828] hover:bg-[#212121] p-[4px] rounded-[6px] flex'>
       <div className='grid grid-flow-col place-items-center gap-[6px]'>
@@ -94,14 +90,14 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
         <div className='grid grid-flow-row'>
           <h1 className='text-white text-[12px] md:text-[14px]'>
             {artist.map((a, index) => (
-              <span key={index}>{a}</span>
+              <span key={index}>{(index ? ', ' : '') + a}</span>
             ))}{' '}
             - {title}
           </h1>
           <h2 className='text-[#707070] text-[10px] md:text-[12px]'>
             (prod.{' '}
             {producer.map((p, index) => (
-              <span key={index}>{p}</span>
+              <span key={index}>{(index ? ', ' : '') + p}</span>
             ))}
             )
           </h2>

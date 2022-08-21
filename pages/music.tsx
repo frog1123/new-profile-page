@@ -1,12 +1,15 @@
 import { NextPage } from 'next';
-import type { FC } from 'react';
+import { FC, useContext, useEffect, useMemo } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import { UserContext } from 'UserContext';
 
 import { SongTab } from '@components/SongTab';
 
 import six_dogs from '@public/audio_images/6_dogs.jpg';
 import purple_sky from '@public/audio_images/purple_sky.webp';
+import dark_sky from '@public/audio_images/dark_sky.jpg';
+import dark_sky_2 from '@public/audio_images/dark_sky_2.jpg';
 import anime_tree from '@public/audio_images/anime_tree.jpg';
 import umbrella from '@public/umbrella.svg';
 
@@ -15,6 +18,23 @@ const Line: FC = () => {
 };
 
 const Music: NextPage = () => {
+  const { value, setValue } = useContext(UserContext);
+
+  useEffect(() => {
+    if (value.pauseCurrentlyPlaying) {
+      setValue({ ...value, pauseCurrentlyPlaying: false, currentlyPlaying: value.currentlyPlaying.slice(1) });
+
+      if (value.currentlyPlaying[0] !== '') {
+        const audio = document.getElementById(`audio-${value.currentlyPlaying[0]}`) as any;
+        document.getElementById(`pause-${value.currentlyPlaying[0]}`)?.classList.add('hidden');
+        document.getElementById(`play-${value.currentlyPlaying[0]}`)?.classList.remove('hidden');
+        document.getElementById(`play-${value.currentlyPlaying[0]}`)?.classList.add('block');
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    }
+  });
+
   return (
     <>
       <Head>
@@ -36,10 +56,12 @@ const Music: NextPage = () => {
                 <h1 className='gradient-text text-[24px] font-bold'>cool</h1>
                 <Line />
                 <div className='pt-[4px]'>
-                  <SongTab image={six_dogs} title='Someone' song='Someone' artist={['6 dogs']} producer={['captaincrunch, nebarb']} />
+                  <SongTab image={six_dogs} title='Someone' song='Someone' artist={['6 dogs']} producer={['captaincrunch', 'nebarb']} />
                   <SongTab image={six_dogs} title='No Savage' song='No_Savage' artist={['6 dogs']} producer={['Pretty Pacc']} />
                   <SongTab title='MIA' song='MIA' artist={['shrimp']} producer={['MineSweepa']} />
-                  <SongTab image={purple_sky} title='painless' song='painless' artist={['keyblayde808, emotionals3k']} producer={['keyblayde808']} />
+                  <SongTab image={purple_sky} title='painless' song='painless' artist={['keyblayde808', 'emotionals3k']} producer={['keyblayde808']} />
+                  <SongTab image={dark_sky} title='tanlines' song='tanlines' artist={['shrimp']} producer={['shrimp']} />
+                  <SongTab image={dark_sky_2} title='Head Straight' song='Head_Straight' artist={['Shakewell']} producer={['MTM', 'Flexatelli']} />
                 </div>
               </div>
 

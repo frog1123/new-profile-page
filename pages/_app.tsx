@@ -15,8 +15,9 @@ const App = ({ Component, pageProps }: AppProps) => {
   });
 
   const [value, setValue] = useState({
-    stopPlayingAudio: false,
-    currentlyPlaying: ''
+    pauseCurrentlyPlaying: false,
+    currentlyPlaying: [''],
+    currentlyPlayingPaused: false
   });
 
   Router.events.on('routeChangeStart', start);
