@@ -19,6 +19,8 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
   let audioVolume: number = 50;
 
   useEffect(() => {
+    if (typeof document === 'undefined') return;
+
     const audio = document.getElementById(`audio-${song}`) as any;
     const duration = document.getElementById(`duration-total-${song}`) as any;
     const time = new Date(Math.floor(audio.duration) * 1000).toISOString().substring(14, 19);
