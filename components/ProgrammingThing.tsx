@@ -12,7 +12,7 @@ export const ProgammingThing: FC<ProgammingThingProps> = ({ name, items }) => {
       <h1 className='gradient-text font-bold mr-auto'>{name}</h1>
       <div className='grid grid-flow-col ml-auto'>
         {items.map((icon, index) => (
-          <Image src={icon} key={index} width={25} height={25} />
+          <Image src={icon} key={index} width={25} height={25} alt='' />
         ))}
       </div>
     </div>

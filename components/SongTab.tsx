@@ -16,11 +16,12 @@ interface SongTabProps {
 export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer }) => {
   const { value, setValue } = useContext(UserContext);
 
-  let audioVolume: number;
+  let audioVolume: number = 50;
 
   useEffect(() => {
     let volume = document.getElementById(`volume-slider-${song}`) as any;
     const audio = document.getElementById(`audio-${song}`) as any;
+    audio.volume = 0.5;
 
     volume.oninput = function () {
       audioVolume = this.value / 100;
@@ -88,7 +89,7 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
     <div className='bg-[#282828] hover:bg-[#212121] p-[4px] rounded-[6px] flex'>
       <div className='grid grid-flow-col place-items-center gap-[6px]'>
         <div className='w-[30px] h-[30px] md:w-[40px] md:h-[40px]'>
-          <Image src={typeof image === 'undefined' ? alt : image} />
+          <Image src={typeof image === 'undefined' ? alt : image} alt='' />
         </div>
         <div className='grid grid-flow-row'>
           <h1 className='text-white text-[12px] md:text-[14px]'>

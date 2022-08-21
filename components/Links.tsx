@@ -8,11 +8,11 @@ interface FrogLinkProps {
 
 export const FrogLink: FC<FrogLinkProps> = ({ text, url }) => {
   return (
-    <a className='cursor-pointer'>
-      <Link href={url}>
+    <Link href={url}>
+      <a className='cursor-pointer'>
         <h1 className='gradient-text text-[14px] md:text-[20px] font-bold'>{text}</h1>
-      </Link>
-    </a>
+      </a>
+    </Link>
   );
 };
 

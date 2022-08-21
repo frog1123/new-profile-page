@@ -192,6 +192,7 @@ button {
   background: #b5e48c;
   outline: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .volume-slider::-webkit-slider-thumb {

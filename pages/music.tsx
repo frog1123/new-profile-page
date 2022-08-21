@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { SongTab } from '@components/SongTab';
 
 import six_dogs from '@public/audio_images/6_dogs.jpg';
+import purple_sky from '@public/audio_images/purple_sky.webp';
+import anime_tree from '@public/audio_images/anime_tree.jpg';
 import umbrella from '@public/umbrella.svg';
 
 const Line: FC = () => {
@@ -37,6 +39,7 @@ const Music: NextPage = () => {
                   <SongTab image={six_dogs} title='Someone' song='Someone' artist={['6 dogs']} producer={['captaincrunch, nebarb']} />
                   <SongTab image={six_dogs} title='No Savage' song='No_Savage' artist={['6 dogs']} producer={['Pretty Pacc']} />
                   <SongTab title='MIA' song='MIA' artist={['shrimp']} producer={['MineSweepa']} />
+                  <SongTab image={purple_sky} title='painless' song='painless' artist={['keyblayde808, emotionals3k']} producer={['keyblayde808']} />
                 </div>
               </div>
 
@@ -46,6 +49,7 @@ const Music: NextPage = () => {
                 <div className='pt-[4px]'>
                   <SongTab title='time flies' song='time_flies' artist={['jhove']} producer={['idk']} />
                   <SongTab title='Somewhere Away' song='Somewhere_Away' artist={['Goosetaf']} producer={['idk']} />
+                  <SongTab image={anime_tree} title='Flossing (Instrumental)' song='Flossing_Instrumental' artist={['6 dogs']} producer={['yungjugg']} />
                 </div>
               </div>
             </div>
