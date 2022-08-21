@@ -19,6 +19,13 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
   let audioVolume: number = 50;
 
   useEffect(() => {
+    const audio = document.getElementById(`audio-${song}`) as any;
+    const duration = document.getElementById(`duration-total-${song}`) as any;
+    const time = new Date(Math.floor(audio.duration) * 1000).toISOString().substring(14, 19);
+    duration.innerHTML = time;
+  });
+
+  useEffect(() => {
     let volume = document.getElementById(`volume-slider-${song}`) as any;
     const audio = document.getElementById(`audio-${song}`) as any;
     audio.volume = 0.5;
@@ -31,6 +38,13 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
       document.getElementById(`sound-${song}`)?.classList.remove('hidden');
       document.getElementById(`sound-${song}`)?.classList.add('block');
     };
+
+    if (!audio.paused)
+      setInterval(() => {
+        const duration = document.getElementById(`duration-current-${song}`) as any;
+        const time = new Date(Math.floor(audio.currentTime) * 1000).toISOString().substring(14, 19);
+        duration.innerHTML = time;
+      }, 1000);
   });
 
   const playAudio = () => {
@@ -88,11 +102,18 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
           <Image src={typeof image === 'undefined' ? alt : image} alt='' />
         </div>
         <div className='grid grid-flow-row'>
-          <h1 className='text-white text-[12px] md:text-[14px]'>
+          <h1 className='text-white text-[10px] sm:text-[12px] md:text-[14px]'>
             {artist.map((a, index) => (
               <span key={index}>{(index ? ', ' : '') + a}</span>
             ))}{' '}
-            - {title}
+            - {title}{' '}
+            <span className='text-[#707070] text-[8px] sm:text-[10px] md:text-[12px] align-middle' id={`duration-current-${song}`}>
+              00:00
+            </span>
+            <span className='text-[#707070] text-[8px] sm:text-[10px] md:text-[12px] align-middle'> / </span>
+            <span className='text-[#707070] text-[8px] sm:text-[10px] md:text-[12px] align-middle' id={`duration-total-${song}`}>
+              00:00
+            </span>
           </h1>
           <h2 className='text-[#707070] text-[10px] md:text-[12px]'>
             (prod.{' '}
