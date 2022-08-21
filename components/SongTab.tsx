@@ -20,12 +20,12 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
 
   useEffect(() => {
     if (typeof document === 'undefined') return;
-
     const audio = document.getElementById(`audio-${song}`) as any;
     const duration = document.getElementById(`duration-total-${song}`) as any;
+    if (isNaN(audio.duration)) return;
     const time = new Date(Math.floor(audio.duration) * 1000).toISOString().substring(14, 19);
     duration.innerHTML = time;
-  });
+  }, []);
 
   useEffect(() => {
     let volume = document.getElementById(`volume-slider-${song}`) as any;
