@@ -23,8 +23,6 @@ const Music: NextPage = () => {
   useEffect(() => {
     if (value.pauseCurrentlyPlaying) {
       setValue({ ...value, pauseCurrentlyPlaying: false, currentlyPlaying: value.currentlyPlaying.slice(1) });
-      console.log(value.currentlyPlaying);
-
       if (value.currentlyPlaying[0] === value.currentlyPlaying[1]) return;
 
       if (value.currentlyPlaying[0] !== '') {

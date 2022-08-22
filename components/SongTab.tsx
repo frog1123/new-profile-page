@@ -22,10 +22,21 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
     if (typeof document === 'undefined') return;
     const audio = document.getElementById(`audio-${song}`) as any;
     const duration = document.getElementById(`duration-total-${song}`) as any;
-    if (isNaN(audio.duration)) return;
-    const time = new Date(Math.floor(audio.duration) * 1000).toISOString().substring(14, 19);
-    duration.innerHTML = time;
-  }, []);
+
+    audio.onloadedmetadata = () => {
+      const time = new Date(Math.floor(audio.duration) * 1000).toISOString().substring(14, 19);
+      duration.innerHTML = time;
+    };
+
+    // for refresh
+    let executed = false;
+    while (!isNaN(audio.duration) && !executed) {
+      console.log('executed');
+      executed = true;
+      const time = new Date(Math.floor(audio.duration) * 1000).toISOString().substring(14, 19);
+      duration.innerHTML = time;
+    }
+  });
 
   useEffect(() => {
     let volume = document.getElementById(`volume-slider-${song}`) as any;
@@ -55,7 +66,6 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
     document.getElementById(`pause-${song}`)?.classList.remove('hidden');
     document.getElementById(`pause-${song}`)?.classList.add('block');
     setValue({ ...value, pauseCurrentlyPlaying: true, currentlyPlaying: [...value.currentlyPlaying, song] });
-    console.log(value);
 
     audio.play();
   };
@@ -71,6 +81,9 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
 
   const skipAudio = (mode: string) => {
     const audio = document.getElementById(`audio-${song}`) as any;
+    const duration = document.getElementById(`duration-current-${song}`) as any;
+    const time = new Date(Math.floor(audio.currentTime) * 1000).toISOString().substring(14, 19);
+    duration.innerHTML = time;
 
     if (mode === 'forward') audio.currentTime += 10;
     if (mode === 'back') audio.currentTime -= 10;
@@ -128,7 +141,7 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
         </div>
       </div>
       <div className='ml-[auto] grid grid-cols-[max-content_auto] place-items-center'>
-        <audio id={`audio-${song}`} loop>
+        <audio id={`audio-${song}`} preload='metadata' loop>
           <source src={`/audio/${song}.mp3`} type='audio/mp3' />
         </audio>
         <div className='grid grid-flow-col place-items-center gap-[4px] md:gap-0'>
