@@ -31,7 +31,6 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
     // for refresh
     let executed = false;
     while (!isNaN(audio.duration) && !executed) {
-      console.log('executed');
       executed = true;
       const time = new Date(Math.floor(audio.duration) * 1000).toISOString().substring(14, 19);
       duration.innerHTML = time;

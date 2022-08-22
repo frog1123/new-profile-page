@@ -53,7 +53,7 @@ const Music: NextPage = () => {
             <h1 className='gradient-text text-[24px] font-bold'>MUSIC</h1>
 
             <div className='grid grid-flow-row gap-[20px] w-[100%] place-items-center'>
-              <div className='w-[100%] sm:w-[90%] md:w-[70%] bg-[#282828] p-[4px] rounded-[10px]'>
+              <div className='w-[100%] sm:w-[95%] md:w-[90%] bg-[#282828] p-[4px] rounded-[10px]'>
                 <h1 className='gradient-text text-[24px] font-bold'>cool</h1>
                 <Line />
                 <div className='pt-[4px]'>
@@ -66,13 +66,14 @@ const Music: NextPage = () => {
                 </div>
               </div>
 
-              <div className='w-[100%] sm:w-[90%] md:w-[70%] bg-[#282828] p-[4px] rounded-[10px]'>
+              <div className='w-[100%] sm:w-[95%] md:w-[90%] bg-[#282828] p-[4px] rounded-[10px]'>
                 <h1 className='gradient-text text-[24px] font-bold'>instrumentals</h1>
                 <Line />
                 <div className='pt-[4px]'>
                   <SongTab title='time flies' song='time_flies' artist={['jhove']} producer={['idk']} />
                   <SongTab title='Somewhere Away' song='Somewhere_Away' artist={['Goosetaf']} producer={['idk']} />
                   <SongTab image={anime_tree} title='Flossing (Instrumental)' song='Flossing_Instrumental' artist={['6 dogs']} producer={['yungjugg']} />
+                  <SongTab title='Decay' song='Decay' artist={['HOME']} producer={['HOME']} />
                 </div>
               </div>
             </div>
@@ -83,7 +84,7 @@ const Music: NextPage = () => {
           </div>
         </div>
 
-        <div className='m-auto w-[max-content] pt-[20px]'>
+        <div className='m-auto w-[max-content] pt-[20px] pb-[20px]'>
           <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
             <Image src={umbrella} layout='responsive' alt='' />
           </div>
