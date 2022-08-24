@@ -6,7 +6,7 @@ const FrogHtml: FrogHtml = Html;
 
 const Document: NextPage = () => {
   return (
-    <FrogHtml lang='en' frogdude1123='' was='' here=''>
+    <FrogHtml lang='en'>
       <Head>
         <link rel='icon' type='image' href='f.ico' />
       </Head>
