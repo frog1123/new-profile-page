@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import { FC, useContext, useEffect, useMemo } from 'react';
+import { FC, useContext, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { UserContext } from 'UserContext';

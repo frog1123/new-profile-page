@@ -1,12 +1,12 @@
 import type { NextPage } from 'next';
 import { Html, Head, Main, NextScript } from 'next/document';
 
-type FrogHtml = (props: React.DetailedHTMLProps<any, HTMLHtmlElement>) => JSX.Element;
-const FrogHtml: FrogHtml = Html;
+// type FrogHtml = (props: React.DetailedHTMLProps<any, HTMLHtmlElement>) => JSX.Element;
+// const FrogHtml: FrogHtml = Html;
 
 const Document: NextPage = () => {
   return (
-    <FrogHtml lang='en'>
+    <Html lang='en'>
       <Head>
         <link rel='icon' type='image' href='f.ico' />
       </Head>
@@ -14,7 +14,7 @@ const Document: NextPage = () => {
         <Main />
         <NextScript />
       </body>
-    </FrogHtml>
+    </Html>
   );
 };
 
