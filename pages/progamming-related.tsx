@@ -48,6 +48,7 @@ import nest from '@public/progamming/quit/nest.svg';
 import netlify from '@public/progamming/planning/netlify.svg';
 import sass from '@public/progamming/planning/sass.svg';
 import rust from '@public/progamming/planning/rust.svg';
+import { BottomThing } from '@components/BottomThing';
 
 const langs = [js, ts];
 const frontend = [react, next, html];
@@ -118,7 +119,13 @@ const ProgammingRelated: NextPage = () => {
                   it generates basic hello world project in js or ts <br />
                   stopped working on zwav and started emberwave which is basically zwav but better <br />
                   started using prisma as an orm <br />
-                  decided to redesign the profile page again which is what is currently happening
+                  decided to redesign the profile page again which is what is currently happening <br />
+                  tried learning rust cuz its fast stuff <br />
+                  made a cryptopunk style image generator <br />
+                  thinking about using vercel free tier since heroku free tier is getting removed <br />
+                  <br />
+                  <br />
+                  confusing stuff: user auth and styled textarea (example: links turn blue) tried to use slatejs but iz too confusing
                 </h1>
               </ShowHideText>
             </div>
@@ -141,11 +148,7 @@ const ProgammingRelated: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className='m-auto w-[max-content] pt-[20px]'>
-          <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
-            <Image src={umbrella} layout='responsive' alt='' />
-          </div>
-        </div>
+        <BottomThing />
       </div>
     </>
   );

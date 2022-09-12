@@ -1,9 +1,9 @@
 import type { FC } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface ProgammingThingProps {
   name: string;
-  items: any[];
+  items: StaticImageData[];
 }
 
 export const ProgammingThing: FC<ProgammingThingProps> = ({ name, items }) => {

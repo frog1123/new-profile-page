@@ -3,7 +3,7 @@ import type { FC } from 'react';
 interface ShowHideTextProps {
   title: string;
   centerTitle?: boolean;
-  children: any;
+  children: JSX.Element[] | JSX.Element;
 }
 
 export const ShowHideText: FC<ShowHideTextProps> = ({ title, centerTitle = false, children }) => {

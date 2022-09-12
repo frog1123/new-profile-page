@@ -1,7 +1,6 @@
 import { NextPage } from 'next';
 import { FC, useContext, useEffect } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import { UserContext } from 'UserContext';
 
 import { SongTab } from '@components/SongTab';
@@ -11,7 +10,7 @@ import purple_sky from '@public/audio_images/purple_sky.webp';
 import dark_sky from '@public/audio_images/dark_sky.jpg';
 import dark_sky_2 from '@public/audio_images/dark_sky_2.jpg';
 import anime_tree from '@public/audio_images/anime_tree.jpg';
-import umbrella from '@public/umbrella.svg';
+import { BottomThing } from '@components/BottomThing';
 
 const Line: FC = () => {
   return <div className='w-[100%] h-[2px] bg-[#707070] mx-auto rounded-[10px]'></div>;
@@ -83,12 +82,7 @@ const Music: NextPage = () => {
             </div>
           </div>
         </div>
-
-        <div className='m-auto w-[max-content] pt-[20px] pb-[20px]'>
-          <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
-            <Image src={umbrella} layout='responsive' alt='' />
-          </div>
-        </div>
+        <BottomThing />
       </div>
     </>
   );
