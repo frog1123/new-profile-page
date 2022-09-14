@@ -32,6 +32,7 @@ import mongodb from '@public/progamming/backend/mongodb.png';
 // deploying
 import docker from '@public/progamming/deploying/docker.svg';
 import heroku from '@public/progamming/deploying/heroku.svg';
+import vercel from '@public/progamming/deploying/vercel.svg';
 
 // package managers
 import pnpm from '@public/progamming/package-managers/pnpm.svg';
@@ -55,7 +56,7 @@ const frontend = [react, next, html];
 const styling = [tailwind, css];
 const api = [apollo, graphql];
 const backend = [nodejs, prisma, mongodb];
-const deploying = [heroku, docker];
+const deploying = [heroku, vercel, docker];
 const packageManagers = [pnpm, yarn, npm];
 const devTools = [git];
 const quit = [go, nest];
@@ -137,6 +138,8 @@ const ProgammingRelated: NextPage = () => {
                   tried learning rust cuz its fast stuff <br />
                   made a cryptopunk style image generator <br />
                   thinking about using vercel free tier since heroku free tier is getting removed <br />
+                  updated this website (profile-page) <br />
+                  also delpoyed this site on vercel, process was really easy signed up and deployed in under 5 mins without reading docs <br />
                   <br />
                   <br />
                   confusing stuff: user auth and styled textarea (example: links turn blue) tried to use slatejs but iz too confusing
