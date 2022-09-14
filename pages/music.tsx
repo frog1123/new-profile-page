@@ -33,6 +33,18 @@ const Music: NextPage = () => {
         audio.currentTime = 0;
       }
     }
+
+    const hiddenElements = document.querySelectorAll('.frog-hidden');
+    console.log(hiddenElements);
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('frog-show');
+        else entry.target.classList.remove('frog-show');
+      });
+    });
+
+    hiddenElements.forEach(el => observer.observe(el));
   });
 
   return (
@@ -47,12 +59,12 @@ const Music: NextPage = () => {
         <title>music 🎵</title>
       </Head>
       <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px]'>
-        <div className='bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
+        <div className='frog-hidden bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
           <div className='grid grid-flow-row place-items-center w-[100%]'>
             <h1 className='gradient-text text-[24px] font-bold'>MUSIC</h1>
 
             <div className='grid grid-flow-row gap-[20px] w-[100%] place-items-center'>
-              <div className='w-[100%] sm:w-[95%] md:w-[90%] bg-[#282828] p-[4px] rounded-[10px]'>
+              <div className='frog-hidden w-[100%] sm:w-[95%] md:w-[90%] bg-[#282828] p-[4px] rounded-[10px]'>
                 <h1 className='gradient-text text-[24px] font-bold'>cool</h1>
                 <Line />
                 <div className='pt-[4px]'>
@@ -65,7 +77,7 @@ const Music: NextPage = () => {
                 </div>
               </div>
 
-              <div className='w-[100%] sm:w-[95%] md:w-[90%] bg-[#282828] p-[4px] rounded-[10px]'>
+              <div className='frog-hidden w-[100%] sm:w-[95%] md:w-[90%] bg-[#282828] p-[4px] rounded-[10px]'>
                 <h1 className='gradient-text text-[24px] font-bold'>instrumentals</h1>
                 <Line />
                 <div className='pt-[4px]'>

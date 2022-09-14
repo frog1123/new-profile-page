@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useEffect } from 'react';
 
 import { ProjectTab } from '@components/ProjectTab';
 import { Gr } from '@components/Gr';
@@ -24,6 +25,20 @@ import thing_4 from '@public/other/thing_4.png';
 const Projects: NextPage = () => {
   const thingArray = [thing_1, thing_2, thing_3, thing_4];
 
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll('.frog-hidden');
+    console.log(hiddenElements);
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('frog-show');
+        else entry.target.classList.remove('frog-show');
+      });
+    });
+
+    hiddenElements.forEach(el => observer.observe(el));
+  });
+
   return (
     <>
       <Head>
@@ -36,7 +51,7 @@ const Projects: NextPage = () => {
         <title>projects</title>
       </Head>
       <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] pb-[50px]'>
-        <div className='bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
+        <div className='frog-hidden bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
           <div className='w-[95%] md:w-[80%] grid grid-flow-row-dense gap-[10px] md:gap-[20px]'>
             <ProjectTab title='fBot' projectId='fBot' madeWith={[js, nodejs, heroku]} repoLink='https://github.com/frog1123/fBot'>
               <h1>
@@ -50,7 +65,7 @@ const Projects: NextPage = () => {
                 and mongdb documents size are capped at <Gr>16mb</Gr>. the app also allowed you to register and login and had profile pages. i didnt rly know what i was doing with user auth i tried using <Gr>cookies</Gr> and <Gr>jwts</Gr>, in the end it kinda worked but not rly. the register was going to have a bot send you a verification code but the app never got deployed so i never bought a domain for the bot email. i worked pretty hard on the app i styled things had cool stuff and used <Gr>twemoji</Gr>. i wanted to be able to have twemojis in the input for when ur writing a post or comment but i couldnt figure out how to do that. i also wanted links to be blue in textareas but i couldnt figure out that either. i found a library called <Gr>slatejs</Gr> for this type of stuff but it was kinda confusing. overall i worked pretty hard on it but it never got deployed :/. i even had some <Gr>yt</Gr> videos showing it
               </h1>
               <div className='aspect-video w-[80%] max-w-[600px] m-auto mt-[10px]'>
-                <iframe src='https://www.youtube.com/embed/k04GdC1gyw4' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen id='featured-video' className='gradient-border disable-select w-[100%] h-[100%]'></iframe>
+                <iframe src='https://www.youtube-nocookie.com/embed/k04GdC1gyw4' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen id='featured-video' className='gradient-border disable-select w-[100%] h-[100%]'></iframe>
               </div>
             </ProjectTab>
             <ProjectTab title='lotus-create' projectId='lotus-create' madeWith={[ts, nodejs]} repoLink='https://github.com/frog1123/lotus-create'>

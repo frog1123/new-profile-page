@@ -4,7 +4,8 @@ import Image from 'next/image';
 
 import { ShowHideText } from '@components/ShowHideText';
 import { ProgammingThing } from '@components/ProgrammingThing';
-import umbrella from '@public/umbrella.svg';
+import { BottomThing } from '@components/BottomThing';
+import { useEffect } from 'react';
 
 // langs
 import js from '@public/progamming/langs/js.svg';
@@ -48,7 +49,6 @@ import nest from '@public/progamming/quit/nest.svg';
 import netlify from '@public/progamming/planning/netlify.svg';
 import sass from '@public/progamming/planning/sass.svg';
 import rust from '@public/progamming/planning/rust.svg';
-import { BottomThing } from '@components/BottomThing';
 
 const langs = [js, ts];
 const frontend = [react, next, html];
@@ -62,6 +62,20 @@ const quit = [go, nest];
 const planning = [netlify, sass, rust];
 
 const ProgammingRelated: NextPage = () => {
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll('.frog-hidden');
+    console.log(hiddenElements);
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('frog-show');
+        else entry.target.classList.remove('frog-show');
+      });
+    });
+
+    hiddenElements.forEach(el => observer.observe(el));
+  });
+
   return (
     <>
       <Head>
@@ -74,7 +88,7 @@ const ProgammingRelated: NextPage = () => {
         <title>progamming-related 🖥️</title>
       </Head>
       <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] pb-[50px]'>
-        <div className='bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
+        <div className='frog-hidden bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
           <div className='grid grid-flow-row'>
             <h1 className='gradient-text text-[24px] font-bold'>PROGAMMING RELATED</h1>
             <div className='text-[12px] sm:text-[14px] md:text-[16px]'>

@@ -11,7 +11,7 @@ interface ProjectTabProps {
 
 export const ProjectTab: FC<ProjectTabProps> = ({ projectId, title, madeWith, repoLink, children }) => {
   return (
-    <div className='bg-[#1e1e1e] overflow-hidden w-[100%] rounded-[12px] px-[10px]'>
+    <div className='frog-hidden bg-[#1e1e1e] overflow-hidden w-[100%] rounded-[12px] px-[10px]'>
       <h1 className='gradient-text text-[20px] md:text-[32px]' id={projectId}>
         {title}
       </h1>

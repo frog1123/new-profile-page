@@ -24,6 +24,20 @@ const Home: NextPage = () => {
     }, 5000);
   }, []);
 
+  useEffect(() => {
+    const hiddenElements = document.querySelectorAll('.frog-hidden');
+    console.log(hiddenElements);
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('frog-show');
+        else entry.target.classList.remove('frog-show');
+      });
+    });
+
+    hiddenElements.forEach(el => observer.observe(el));
+  });
+
   return (
     <div className='pb-[30px]'>
       <Head>
