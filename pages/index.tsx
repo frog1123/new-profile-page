@@ -26,7 +26,6 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     const hiddenElements = document.querySelectorAll('.frog-hidden');
-    console.log(hiddenElements);
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
