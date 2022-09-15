@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 
+import styles from '@styles/AboutMe.module.css';
 import { ShowHideText } from '@components/ShowHideText';
 
 export const AboutMe: FC = () => {
@@ -10,7 +11,7 @@ export const AboutMe: FC = () => {
           ABOUT ME
         </h1>
         <p className='text-white text-center whitespace-pre-wrap px-[2px]'>
-          <span className='wave'>👋</span> hello im <span className='gradient-text'>frogdude1123</span> idk what else to add here lmao
+          <span className={styles.wave}>👋</span> hello im <span className='gradient-text'>frogdude1123</span> idk what else to add here lmao
           <br />
           ok <span className='gradient-text'>bye</span>
         </p>

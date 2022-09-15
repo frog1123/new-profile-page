@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { AudioPlayerMini } from '@components/AudioPlayerMini';
 import frog_pfp from '@public/frog.png';
 import palm_tree from '@public/palm_tree.png';
-import wallpaper from '@public/wallpaper.png';
+import wallpaper from '@public/wallpaper.gif';
 
 export const ProfilePicture: FC = () => {
   return (

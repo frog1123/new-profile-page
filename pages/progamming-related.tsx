@@ -1,11 +1,10 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
+import { useEffect } from 'react';
 
 import { ShowHideText } from '@components/ShowHideText';
 import { ProgammingThing } from '@components/ProgrammingThing';
 import { BottomThing } from '@components/BottomThing';
-import { useEffect } from 'react';
 
 // langs
 import js from '@public/progamming/langs/js.svg';
@@ -87,7 +86,7 @@ const ProgammingRelated: NextPage = () => {
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>progamming-related 🖥️</title>
       </Head>
-      <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] pb-[50px]'>
+      <div className='grid grid-flow-row gap-[10px] md:gap-[15px] w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] pb-[50px]'>
         <div className='frog-hidden bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
           <div className='grid grid-flow-row'>
             <h1 className='gradient-text text-[24px] font-bold'>PROGAMMING RELATED</h1>

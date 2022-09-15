@@ -19,6 +19,7 @@ export const Explore: FC = () => {
           <FrogButton text='about me' location='about-me' />
           <FrogButton text='socials' location='socials' />
           <FrogButton text='featured video' location='featured-video' />
+          <FrogButton text='settings' location='settings' />
           <FrogButton text='links' location='links' />
         </div>
       </div>

@@ -9,7 +9,7 @@ import { removeSmoothScroll } from '@utils/smoothScroll';
 export const BottomThing: FC = () => {
   return (
     <div className='m-auto w-[max-content] pt-[20px]'>
-      <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
+      <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation m-auto'>
         <Image src={umbrella} layout='responsive' priority alt='' />
       </div>
       <h1 className='text-white mt-[15px]'>

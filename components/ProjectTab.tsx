@@ -24,7 +24,10 @@ export const ProjectTab: FC<ProjectTabProps> = ({ projectId, title, madeWith, re
       </div>
       <div className='mt-[4px] md:mt-[6px] text-white text-[12px] sm:text-[14px] md:text-[16px]'>{children}</div>
       <h1 className='text-white text-[12px] sm:text-[14px] md:text-[16px] mt-[20px]'>
-        repo link: <span className='gradient-text'>{repoLink}</span>
+        repo link:{' '}
+        <a href={repoLink} rel='noopener noreferrer' className='cursor-pointer'>
+          <span className='gradient-text'>{repoLink}</span>
+        </a>
       </h1>
     </div>
   );
