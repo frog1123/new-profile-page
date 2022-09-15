@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Gr } from './Gr';
 
 import umbrella from '@public/umbrella.svg';
+import { removeSmoothScroll } from '@utils/smoothScroll';
 
 export const BottomThing: FC = () => {
   return (
@@ -14,7 +15,7 @@ export const BottomThing: FC = () => {
       <h1 className='text-white mt-[15px]'>
         return{' '}
         <Link href='/'>
-          <a>
+          <a onClick={() => removeSmoothScroll()}>
             <Gr>home</Gr>
           </a>
         </Link>

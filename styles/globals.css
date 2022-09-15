@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
@@ -215,5 +216,13 @@ button {
 .frog-show {
   opacity: 1;
   filter: blur(0);
+  transform: translateX(0);
+}
+
+.frog-hidden:nth-child(even) {
+  transform: translateX(100%);
+}
+
+.frog-show:nth-child(even) {
   transform: translateX(0);
 }

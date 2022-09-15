@@ -11,9 +11,11 @@ import { Links } from '@components/Links';
 import { Explore } from '@components/Explore';
 
 import umbrella from '@public/umbrella.svg';
+import { addSmoothScroll } from '@utils/smoothScroll';
 
 const Home: NextPage = () => {
   useEffect(() => {
+    addSmoothScroll();
     console.log("%c        __ _.--..--._ _\r\n     .-' _/   _/\\_   \\_'-.\r\n    |__ /   _/\\__/\\_   \\__|\r\n       |___/\\_\\__/  \\___|\r\n              \\__/\r\n              \\__/\r\n               \\__/\r\n                \\__/\r\n             ____\\__/___\r\n       . - '             ' -.\r\n      /                      \\\r\n~~~~~~~  ~~~~~ ~~~~~  ~~~ ~~~  ~~~~~\r\n      ~~~   ~~~~~   ~~~   ~~ ~  ~ ~ ~\n             frogdude1123", 'color: #d9ed92');
 
     const emojis: string[] = ['🌴', '💫', '🐸', '🌱', '🍃', '🌲', '🍄', '☃️'];

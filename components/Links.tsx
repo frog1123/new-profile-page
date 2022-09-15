@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import Link from 'next/link';
+import { removeSmoothScroll } from '@utils/smoothScroll';
 
 interface FrogLinkProps {
   text: string;
@@ -9,7 +10,7 @@ interface FrogLinkProps {
 export const FrogLink: FC<FrogLinkProps> = ({ text, url }) => {
   return (
     <Link href={url}>
-      <a className='cursor-pointer'>
+      <a className='cursor-pointer' onClick={() => removeSmoothScroll()}>
         <h1 className='gradient-text text-[14px] md:text-[20px] font-bold'>{text}</h1>
       </a>
     </Link>
