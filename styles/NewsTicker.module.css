@@ -5,7 +5,7 @@
 
 .news-ticker-move {
   display: flex;
-  animation: tickermove linear 20s infinite;
+  animation: tickermove linear 50s infinite;
 }
 
 @keyframes tickermove {
@@ -13,7 +13,8 @@
     transform: translate3d(100%, 0, 0);
   }
   100% {
-    transform: translate3d(-300%, 0, 0);
+    /* -((number of items * 100) - 100) + 48.5 */
+    transform: translate3d(-1348.5%, 0, 0);
   }
 }
 
