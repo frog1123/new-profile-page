@@ -1,0 +1,24 @@
+.news-ticker-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.news-ticker-move {
+  display: flex;
+  animation: tickermove linear 20s infinite;
+}
+
+@keyframes tickermove {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-300%, 0, 0);
+  }
+}
+
+.nt-item {
+  flex-shrink: 0;
+  width: 100%;
+  text-align: center;
+}
