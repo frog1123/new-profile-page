@@ -9,9 +9,6 @@ import palm_tree from '@public/palm_tree.png';
 import wallpaper from '@public/wallpaper.gif';
 
 export const ProfilePicture: FC = () => {
-  const wallpaperHoverEffectEnter = () => document.getElementById('fwallpaper')?.classList.add(styles['wallpaper-hover-effect']);
-  const wallpaperHoverEffectExit = () => document.getElementById('fwallpaper')?.classList.remove(styles['wallpaper-hover-effect']);
-
   return (
     <div className='frog-hidden bg-[#333333] flex justify-center pt-[4px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
       <div className='grid grid-flow-row w-[100%] place-items-center'>
@@ -29,7 +26,7 @@ export const ProfilePicture: FC = () => {
                   </div>
                 </div>
                 <div className='z-[421] absolute w-[100%] top-[50%] transform translate-y-[-50%]'>
-                  <div onMouseEnter={() => wallpaperHoverEffectEnter()} onMouseOut={() => wallpaperHoverEffectExit()} className='w-[100%] hidden sm:block h-[50px] md:h-[80px] lg:h-[100px] xl:h-[120px] border-[#b5e48c] border-[4px] rounded-[100px] overflow-hidden'></div>
+                  <div className={`w-[100%] hidden sm:block h-[50px] md:h-[80px] lg:h-[100px] xl:h-[120px] border-[#b5e48c] border-[4px] rounded-[100px] overflow-hidden ${styles['wallpaper-hover-effect']}`}></div>
                 </div>
                 <div className='z-[1123] my-auto w-[80px] h-[80px] md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px] xl:h-[200px] xl:w-[200px] disable-select hover:rotate-[360deg] rounded-[50%] border-[#b5e48c] border-[4px]'>
                   <Image src={frog_pfp} className='rounded-[50%]' alt='' />

@@ -1,4 +1,4 @@
-.wallpaper-hover-effect {
+.wallpaper-hover-effect:hover {
   -webkit-transform: scale(105%); /* Safari and Chrome */
   -moz-transform: scale(105%); /* Firefox */
   -ms-transform: scale(105%); /* IE 9 */
