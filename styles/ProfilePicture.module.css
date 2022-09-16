@@ -1,5 +1,13 @@
 .wallpaper-hover-effect {
+  -webkit-transform: scale(105%); /* Safari and Chrome */
+  -moz-transform: scale(105%); /* Firefox */
+  -ms-transform: scale(105%); /* IE 9 */
+  -o-transform: scale(105%); /* Opera */
   transform: scale(105%);
   filter: brightness(75%);
-  transition: 300ms;
+  -webkit-transition: 300ms ease-out;
+  -moz-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  -ms-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
