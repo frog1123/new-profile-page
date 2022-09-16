@@ -20,7 +20,7 @@ export const ProfilePicture: FC = () => {
             <div className='w-[100%]'>
               <div className='relative w-[100%] h-[100%] flex justify-center align-middle'>
                 <div className='z-[420] absolute w-[100%] top-[50%] transform translate-y-[-50%]'>
-                  <div className='relative w-[100%] hidden sm:block h-[50px] md:h-[80px] lg:h-[100px] xl:h-[120px] border-[#b5e48c] border-[4px] rounded-[100px] overflow-hidden'>
+                  <div className='w-[100%] hidden sm:block h-[50px] md:h-[80px] lg:h-[100px] xl:h-[120px] border-[#b5e48c] border-[4px] rounded-[100px] overflow-hidden'>
                     <img id='fwallpaper' src='/wallpaper.gif' className={`!overflow-hidden object-cover w-[100%] ${styles['wallpaper-hover-effect']}`} alt='' />
                   </div>
                 </div>
