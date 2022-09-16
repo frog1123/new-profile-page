@@ -10,4 +10,5 @@
   -o-transition: 300ms ease-out;
   -ms-transition: 300ms ease-out;
   transition: 300ms ease-out;
+  border-radius: 100px;
 }
