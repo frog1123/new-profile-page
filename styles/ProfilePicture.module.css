@@ -1,4 +1,4 @@
-.wallpaper:hover {
+.wallpaper-hover-effect {
   transform: scale(105%);
   filter: brightness(75%);
   transition: 300ms;
