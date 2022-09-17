@@ -1,0 +1,12 @@
+.rand-image-generator-img-hidden {
+  opacity: 0;
+  filter: blue(20px);
+  transform: translateY(-100%);
+  transition: all 750ms;
+}
+
+.rand-image-generator-img-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}

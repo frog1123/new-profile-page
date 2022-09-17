@@ -21,7 +21,7 @@ export const ProfilePicture: FC = () => {
               <div className='relative w-[100%] h-[100%] flex justify-center align-middle'>
                 <div className='z-[420] absolute w-[100%] top-[50%] transform translate-y-[-50%]'>
                   <div className='w-[100%] hidden sm:block h-[50px] md:h-[80px] lg:h-[100px] xl:h-[120px] border-[#b5e48c] border-[4px] rounded-[100px] overflow-hidden'>
-                    <img id='fwallpaper' src='/wallpaper.gif' className={`!overflow-hidden !relative object-cover w-[100%] ${styles['wallpaper-hover-effect']}`} alt='' />
+                    <img id='fwallpaper' src='/wallpaper.gif' className={`!overflow-hidden !relative object-cover w-[100%] select-none ${styles['wallpaper-hover-effect']}`} alt='' />
                   </div>
                 </div>
                 <div className='z-[1123] my-auto w-[80px] h-[80px] md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px] xl:h-[200px] xl:w-[200px] disable-select hover:rotate-[360deg] rounded-[50%] border-[#b5e48c] border-[4px]'>

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect } from 'react';
 
+import styles from '@styles/Projects.module.css';
 import { ProjectTab } from '@components/ProjectTab';
 import { Gr } from '@components/Gr';
 import { BottomThing } from '@components/BottomThing';
@@ -27,6 +28,14 @@ const Projects: NextPage = () => {
 
   useEffect(() => {
     const hiddenElements = document.querySelectorAll('.frog-hidden');
+    const randImgGenElements = document.querySelectorAll(`.${styles['rand-image-generator-img-hidden']}`);
+
+    const randImgGenObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add(styles['rand-image-generator-img-show']);
+        else entry.target.classList.remove(styles['rand-image-generator-img-show']);
+      });
+    });
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -35,6 +44,7 @@ const Projects: NextPage = () => {
       });
     });
 
+    randImgGenElements.forEach(el => randImgGenObserver.observe(el));
     hiddenElements.forEach(el => observer.observe(el));
   });
 
@@ -78,7 +88,7 @@ const Projects: NextPage = () => {
               </h1>
               <div className='w-[95%] md:w-[80%] m-auto mt-[10px] grid grid-cols-4 gap-[6px] sm:gap-[10px] md:gap-[20px] rendering-pixelated'>
                 {thingArray.map((img, index) => (
-                  <Image src={img} layout='responsive' alt='' key={index} className='rounded-[8px]' />
+                  <Image src={img} layout='responsive' alt='' key={index} className={`rounded-[8px] ${styles['rand-image-generator-img-hidden']}`} />
                 ))}
               </div>
             </ProjectTab>
