@@ -13,8 +13,8 @@
     transform: translate3d(100%, 0, 0);
   }
   100% {
-    /* -((number of items * 100) - 100) + 48.5 */
-    transform: translate3d(-1348.5%, 0, 0);
+    /* -(number of items * 100)% */
+    transform: translate3d(-1600%, 0, 0);
   }
 }
 
@@ -22,4 +22,10 @@
   flex-shrink: 0;
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .nt-item {
+    font-size: 12px;
+  }
 }

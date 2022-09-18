@@ -8,7 +8,7 @@ export const FeaturedVideo: FC = () => {
           FEATURED VIDEO
         </h1>
         <div className='aspect-video w-[200px] sm:w-[400px] md:w-[600px] lg:w-[800px]'>
-          <iframe src='https://www.youtube-nocookie.com/embed/G6ImwlyveCY' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen id='featured-video' className='gradient-border disable-select w-[100%] h-[100%]'></iframe>
+          <iframe src='https://www.youtube.com/embed/G6ImwlyveCY' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen id='featured-video' className='gradient-border disable-select w-[100%] h-[100%]'></iframe>
         </div>
       </div>
     </div>
