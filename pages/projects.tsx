@@ -12,11 +12,13 @@ import js from '@public/progamming/langs/js.svg';
 import ts from '@public/progamming/langs/ts.svg';
 import next from '@public/progamming/frontend/next.svg';
 import tailwind from '@public/progamming/styling/tailwindcss.svg';
+import sass from '@public/progamming/planning/sass.svg';
 import apollo from '@public/progamming/api/apollo.svg';
 import graphql from '@public/progamming/api/graphql.svg';
 import nodejs from '@public/progamming/backend/nodejs.svg';
 import mongodb from '@public/progamming/backend/mongodb.png';
 import heroku from '@public/progamming/deploying/heroku.svg';
+import vercel from '@public/progamming/deploying/vercel.svg';
 import rust from '@public/progamming/planning/rust.svg';
 import thing_1 from '@public/other/thing_1.png';
 import thing_2 from '@public/other/thing_2.png';
@@ -91,6 +93,19 @@ const Projects: NextPage = () => {
                   <Image src={img} layout='responsive' alt='' key={index} className={`rounded-[8px] ${styles['rand-image-generator-img-hidden']}`} />
                 ))}
               </div>
+            </ProjectTab>
+            <ProjectTab title='new-profile-page' projectId='new-profile-page' madeWith={[ts, nodejs, next, tailwind, sass, heroku, vercel]} repoLink='https://github.com/frog1123/new-profile-page'>
+              <h1>
+                this project is the site ur currently viewing. its been deployed to <Gr>heroku</Gr> and <Gr>vercel</Gr> on{' '}
+                <a href='https://frogdude1123.herokuapp.com/' rel='noopener noreferrer'>
+                  <Gr>https://frogdude1123.herokuapp.com/</Gr>
+                </a>{' '}
+                and{' '}
+                <a href='https://frogdude1123.vercel.app/' rel='noopener noreferrer'>
+                  <Gr>https://frogdude1123.vercel.app/</Gr>
+                </a>{' '}
+                (heroku site may be down cuz theyre removing the free tier). not much else to say since ur viewing it rn
+              </h1>
             </ProjectTab>
           </div>
         </div>

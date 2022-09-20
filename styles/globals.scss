@@ -87,8 +87,11 @@ button {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  ::selection {
-    background: #70ce2940;
+  &::selection {
+    color: #fff;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: #fff;
   }
 }
 
@@ -110,6 +113,10 @@ button {
 ::selection {
   background: #70ce29;
   color: #fff;
+}
+
+img::selection {
+  background: #70ce2940;
 }
 
 ::-webkit-scrollbar {
