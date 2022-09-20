@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import styles from '@styles/AboutMe.module.css';
+import styles from '@styles/AboutMe.module.scss';
 import { ShowHideText } from '@components/ShowHideText';
 
 export const AboutMe: FC = () => {

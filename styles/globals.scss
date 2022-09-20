@@ -86,6 +86,10 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  ::selection {
+    background: #70ce2940;
+  }
 }
 
 .dag-gradient {
@@ -106,10 +110,6 @@ button {
 ::selection {
   background: #70ce29;
   color: #fff;
-}
-
-.gradient-text::selection {
-  background: #70ce2940;
 }
 
 ::-webkit-scrollbar {
@@ -133,22 +133,22 @@ button {
 
 .show-more {
   cursor: pointer;
-}
 
-.show-more + input {
-  display: none;
-}
+  & + input {
+    display: none;
 
-.show-more + input + * {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.75s, overflow 0s;
-}
+    & + * {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.75s, overflow 0s;
+    }
+  }
 
-.show-more + input:checked + * {
-  max-height: 100em;
-  overflow: auto;
-  transition: max-height 1.5s, overflow 0.5s 0.5s;
+  & + input:checked + * {
+    max-height: 100em;
+    overflow: auto;
+    transition: max-height 1.5s, overflow 0.5s 0.5s;
+  }
 }
 
 .volume-slider {
@@ -160,35 +160,35 @@ button {
   outline: none;
   border-radius: 10px;
   cursor: pointer;
-}
 
-.volume-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background: #b5e48c;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  cursor: pointer;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #b5e48c;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
 
 .frog-hidden {
   opacity: 0;
-  filter: blue(20px);
+  filter: blur(4px);
   transform: translateX(-100%);
   transition: all 750ms;
+
+  &:nth-child(even) {
+    transform: translateX(100%);
+  }
 }
 
 .frog-show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-}
 
-.frog-hidden:nth-child(even) {
-  transform: translateX(100%);
-}
-
-.frog-show:nth-child(even) {
-  transform: translateX(0);
+  &:nth-child(even) {
+    transform: translateX(0);
+  }
 }

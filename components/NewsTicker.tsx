@@ -1,6 +1,6 @@
 import { FC, useEffect, useState } from 'react';
 
-import styles from '@styles/NewsTicker.module.css';
+import styles from '@styles/NewsTicker.module.scss';
 import { Gr } from '@components/Gr';
 
 export const NewsTicker: FC = () => {

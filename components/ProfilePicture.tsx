@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import Image from 'next/image';
 
-import styles from '@styles/ProfilePicture.module.css';
+import styles from '@styles/ProfilePicture.module.scss';
 import { AudioPlayerMini } from '@components/AudioPlayerMini';
 import { NewsTicker } from '@components/NewsTicker';
 import frog_pfp from '@public/frog.png';

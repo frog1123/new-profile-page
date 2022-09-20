@@ -1,6 +1,6 @@
 .rand-image-generator-img-hidden {
   opacity: 0;
-  filter: blue(20px);
+  filter: blur(4px);
   transform: translateY(-100%);
   transition: all 750ms;
 }
