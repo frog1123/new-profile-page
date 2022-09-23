@@ -29,11 +29,7 @@ module.exports = {
           classNameRegExp: '((hover|focus|xs|md|sm|lg|xl)[\\\\]*:)*(tw)-[a-zA-Z0-9-[#-_-]*',
           ignorePrefixRegExp: '',
           log: false,
-          classGenerator: (original, opts, context) => {
-            return btoa(original)
-              .replace(/=/g, '')
-              .replace(/^(-?\d|--)/, '_$1');
-          }
+          classGenerator: original => btoa(original).replace(/=/g, '')
         })
       );
     }
