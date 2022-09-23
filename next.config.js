@@ -10,10 +10,8 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')]
   },
-  webpack(config, { dev, isServer, nextRuntime }) {
+  webpack(config, { dev }) {
     const rules = config.module.rules.find(rule => typeof rule.oneOf === 'object').oneOf.filter(rule => Array.isArray(rule.use));
-
-    console.log('webpack ran, next runtime', nextRuntime, 'is server: ', isServer);
 
     if (!dev)
       rules.forEach(rule => {
@@ -23,7 +21,6 @@ module.exports = {
       });
 
     if (!dev) {
-      console.log('css run');
       config.plugins.push(
         new MangleCssClassPlugin({
           classNameRegExp: '((hover|focus|xs|md|sm|lg|xl)[\\\\]*:)*(tw)-[a-zA-Z0-9-[#-_-]*',
