@@ -67,28 +67,28 @@ export const AudioPlayerMini: FC = () => {
   };
 
   return (
-    <div className='bg-[#282828] py-[4px] px-[10px] rounded-[10px]'>
+    <div className='tw-bg-[#282828] tw-py-[4px] tw-px-[10px] tw-rounded-[10px]'>
       <audio id='audio' loop>
         <source src='/audio/time_flies.mp3' type='audio/mp3' />
       </audio>
-      <div className='grid grid-cols-1 md:grid-cols-3 md:gap-[100px]'>
-        <div className='flex'>
-          <span className='hidden md:block gradient-text h-[max-content] my-auto'>🎵 jhove - time flies</span>
+      <div className='tw-grid tw-grid-cols-1 md:tw-grid-cols-3 md:tw-gap-[100px]'>
+        <div className='tw-flex'>
+          <span className='tw-hidden md:tw-block gradient-text tw-h-[max-content] tw-my-auto'>🎵 jhove - time flies</span>
         </div>
-        <div className='grid grid-flow-col place-items-center gap-[20px] md:gap-0'>
+        <div className='tw-grid tw-grid-flow-col tw-place-items-center tw-gap-[20px] md:tw-gap-0'>
           <AudioButton id='back' icon='back' action={() => skipAudio('back')} />
-          <div className='grid place-items-center'>
+          <div className='tw-grid tw-place-items-center'>
             <AudioButton id='play' icon='play' action={playAudio} />
             <AudioButton id='pause' icon='pause' action={pauseAudio} />
           </div>
           <AudioButton id='forward' icon='forward' action={() => skipAudio('forward')} />
         </div>
-        <div className='hidden md:grid grid-cols-[max-content_auto] place-items-center gap-[10px]'>
-          <div className='grid place-items-center'>
+        <div className='tw-hidden md:tw-grid tw-grid-cols-[max-content_auto] tw-place-items-center tw-gap-[10px]'>
+          <div className='tw-grid tw-place-items-center'>
             <AudioButton id='sound' icon='sound' action={muteAudio} />
             <AudioButton id='mute' icon='mute' action={unmuteAudio} />
           </div>
-          <input id='volume-slider' type='range' className='max-w-[120px] lg:max-w-[140px] volume-slider' />
+          <input id='volume-slider' type='range' className='tw-max-w-[120px] lg:tw-max-w-[140px] volume-slider' />
         </div>
       </div>
     </div>

@@ -10,8 +10,8 @@ interface FrogLinkProps {
 export const FrogLink: FC<FrogLinkProps> = ({ text, url }) => {
   return (
     <Link href={url}>
-      <a className='cursor-pointer' onClick={() => removeSmoothScroll()}>
-        <h1 className='gradient-text text-[14px] md:text-[20px] font-bold'>{text}</h1>
+      <a className='tw-cursor-pointer' onClick={() => removeSmoothScroll()}>
+        <h1 className='gradient-text tw-text-[14px] md:tw-text-[20px] tw-font-bold'>{text}</h1>
       </a>
     </Link>
   );
@@ -19,12 +19,12 @@ export const FrogLink: FC<FrogLinkProps> = ({ text, url }) => {
 
 export const Links: FC = () => {
   return (
-    <div className='frog-hidden bg-[#333333] flex justify-center md:pt-[4px] pb-[10px] rounded-[10px] md:rounded-[20px]'>
-      <div className='grid grid-flow-row place-items-center'>
-        <h1 id='links' className='gradient-text text-[24px] font-bold'>
+    <div className='frog-hidden tw-bg-[#333333] tw-flex tw-justify-center md:tw-pt-[4px] tw-pb-[10px] tw-rounded-[10px] md:tw-rounded-[20px]'>
+      <div className='tw-grid tw-grid-flow-row tw-place-items-center'>
+        <h1 id='links' className='gradient-text tw-text-[24px] tw-font-bold'>
           LINKS
         </h1>
-        <div className='grid grid-flow-row'>
+        <div className='tw-grid tw-grid-flow-row'>
           <FrogLink text='projects' url='/projects' />
           <FrogLink text='progamming-related' url='/progamming-related' />
           <FrogLink text='music i like' url='/music' />

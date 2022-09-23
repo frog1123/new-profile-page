@@ -61,9 +61,9 @@ const Projects: NextPage = () => {
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>projects</title>
       </Head>
-      <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] pb-[50px]'>
-        <div className='frog-hidden bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
-          <div className='w-[95%] md:w-[80%] grid grid-flow-row-dense gap-[10px] md:gap-[20px]'>
+      <div className='tw-w-[92%] lg:tw-w-[80%] tw-mx-auto tw-mt-[10px] sm:tw-mt-[30px] md:tw-mt-[50px] tw-pb-[50px]'>
+        <div className='frog-hidden tw-bg-[#333333] tw-flex tw-justify-center tw-px-[6px] tw-pt-[15px] tw-pb-[10px] tw-rounded-[10px] md:tw-rounded-[20px] tw-border-[#b5e48c] tw-border-[4px_0_0_0]'>
+          <div className='tw-w-[95%] md:tw-w-[80%] tw-grid tw-grid-flow-row-dense tw-gap-[10px] md:tw-gap-[20px]'>
             <ProjectTab title='fBot' projectId='fBot' madeWith={[js, nodejs, heroku]} repoLink='https://github.com/frog1123/fBot'>
               <h1>
                 discord bot made with <Gr>discordjs</Gr>, started watching tutorials but eventually started making stuff on my own. i added a <Gr>quiz</Gr> which used discord buttons. i also added a <Gr>src command</Gr> had an argument for a url and the bot would use <Gr>puppeteer</Gr> and upload a txt file of the html content, probably wasnt the most efficient method, but was pretty cool. i hosted it on <Gr>heroku</Gr>, but i took it down to host something else later.
@@ -88,9 +88,9 @@ const Projects: NextPage = () => {
               <h1>
                 in this project i tried generating 30×30 <Gr>cryptopunk style</Gr> images which had different accesories and stuff. it was more limited in amount accessories since it took a while to generate each one. im not that good at <Gr>rust</Gr> so its probably not very optimized, but since rust is a compiled lang its pretty <Gr>fast</Gr> anayway. with the <Gr>--release</Gr> flag each image took under 1ms to generate. it would generate images in a folder called <Gr>/outputs</Gr> and if it didnt exist it would create one, it allowed you to choose how many images to generate which would be like 1.png, 2.png and so on. it also allowed you to specify the starting value (e.g start at 5.png instead of 1.png) and disable or enable logging, cuz it logged the attributes of each image when it was generated. it also allowed you to generate a specific image and define the attributes. anyway here are some cool images it generated
               </h1>
-              <div className='w-[95%] md:w-[80%] m-auto mt-[10px] grid grid-cols-4 gap-[6px] sm:gap-[10px] md:gap-[20px] rendering-pixelated'>
+              <div className='tw-w-[95%] md:tw-w-[80%] tw-m-auto tw-mt-[10px] tw-grid tw-grid-cols-4 tw-gap-[6px] sm:tw-gap-[10px] md:tw-gap-[20px] tw-rendering-pixelated'>
                 {thingArray.map((img, index) => (
-                  <Image src={img} layout='responsive' alt='' key={index} className={`rounded-[8px] ${styles['rand-image-generator-img-hidden']}`} />
+                  <Image src={img} layout='responsive' alt='' key={index} className={`tw-rounded-[8px] ${styles['rand-image-generator-img-hidden']}`} />
                 ))}
               </div>
             </ProjectTab>

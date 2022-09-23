@@ -9,35 +9,35 @@ import palm_tree from '@public/palm_tree.png';
 
 export const ProfilePicture: FC = () => {
   return (
-    <div className='frog-hidden bg-[#333333] flex justify-center pt-[4px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
-      <div className='grid grid-flow-row w-[100%] place-items-center'>
+    <div className='frog-hidden tw-bg-[#333333] tw-flex tw-justify-center tw-pt-[4px] tw-pb-[10px] tw-rounded-[10px] md:tw-rounded-[20px] tw-border-[#b5e48c] tw-border-[4px_0_0_0]'>
+      <div className='tw-grid tw-grid-flow-row tw-w-[100%] tw-place-items-center'>
         <NewsTicker />
-        <div className='grid grid-cols-[max-content_auto_max-content] w-[100%]'>
-          <div className='w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[220px] xl:h-[220px] disable-select mirror mr-auto'>
+        <div className='tw-grid tw-grid-cols-[max-content_auto_max-content] tw-w-[100%]'>
+          <div className='tw-w-[80px] tw-h-[80px] sm:tw-w-[100px] sm:tw-h-[100px] md:tw-w-[160px] md:tw-h-[160px] lg:tw-w-[200px] lg:tw-h-[200px] xl:tw-w-[220px] xl:tw-h-[220px] tw-select-none mirror tw-mr-auto'>
             <Image src={palm_tree} className='float-animation' priority alt='' />
           </div>
-          <div className='flex align-middle'>
-            <div className='w-[100%]'>
-              <div className='relative w-[100%] h-[100%] flex justify-center align-middle'>
-                <div className='z-[420] absolute w-[100%] top-[50%] transform translate-y-[-50%]'>
-                  <div className='w-[100%] hidden sm:block h-[50px] md:h-[80px] lg:h-[100px] xl:h-[120px] border-[#b5e48c] border-[4px] rounded-[100px] overflow-hidden'>
-                    <img id='fwallpaper' src='/wallpaper.gif' className={`!overflow-hidden !relative object-cover w-[100%] select-none ${styles['wallpaper-hover-effect']}`} alt='' />
+          <div className='tw-flex tw-align-middle'>
+            <div className='tw-w-[100%]'>
+              <div className='tw-relative tw-w-[100%] tw-h-[100%] tw-flex tw-justify-center tw-align-middle'>
+                <div className='tw-z-[420] tw-absolute tw-w-[100%] tw-top-[50%] tw-transform tw-translate-y-[-50%]'>
+                  <div className='tw-w-[100%] tw-hidden sm:tw-block tw-h-[50px] md:tw-h-[80px] lg:tw-h-[100px] xl:tw-h-[120px] tw-border-[#b5e48c] tw-border-[4px] tw-rounded-[100px] tw-overflow-hidden'>
+                    <img id='fwallpaper' src='/wallpaper.gif' className={`!tw-overflow-hidden !tw-relative tw-object-cover tw-w-[100%] tw-select-none ${styles['wallpaper-hover-effect']}`} alt='' />
                   </div>
                 </div>
-                <div className='z-[1123] my-auto w-[80px] h-[80px] md:w-[140px] md:h-[140px] lg:w-[160px] lg:h-[160px] xl:h-[200px] xl:w-[200px] disable-select hover:rotate-[360deg] rounded-[50%] border-[#b5e48c] border-[4px]'>
-                  <Image src={frog_pfp} className='rounded-[50%]' alt='' />
+                <div className='tw-z-[1123] tw-my-auto tw-w-[80px] tw-h-[80px] md:tw-w-[140px] md:tw-h-[140px] lg:tw-w-[160px] lg:tw-h-[160px] xl:tw-h-[200px] xl:tw-w-[200px] tw-select-none hover:tw-rotate-[360deg] tw-rounded-[50%] tw-border-[#b5e48c] tw-border-[4px]'>
+                  <Image src={frog_pfp} className='tw-rounded-[50%]' alt='' />
                 </div>
               </div>
             </div>
           </div>
-          <div className='w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] xl:w-[220px] xl:h-[220px] disable-select ml-auto flex align-middle'>
+          <div className='tw-w-[80px] tw-h-[80px] sm:tw-w-[100px] sm:tw-h-[100px] md:tw-w-[160px] md:tw-h-[160px] lg:tw-w-[200px] lg:tw-h-[200px] xl:tw-w-[220px] xl:tw-h-[220px] tw-select-none tw-mr-auto'>
             <Image src={palm_tree} className='float-animation' priority alt='' />
           </div>
         </div>
-        <div className='flex m-auto'>
-          <h1 className='gradient-text text-[16px] md:text-[24px] lg:text-[32px]'>frogdude1123</h1>
+        <div className='tw-flex tw-m-auto'>
+          <h1 className='gradient-text tw-text-[16px] md:tw-text-[24px] lg:tw-text-[32px]'>frogdude1123</h1>
         </div>
-        <div className='flex m-auto'>
+        <div className='tw-flex tw-m-auto'>
           <AudioPlayerMini />
         </div>
       </div>

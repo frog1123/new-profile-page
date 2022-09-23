@@ -26,12 +26,12 @@ const socials = [
 
 export const Socials: FC = () => {
   return (
-    <div className='frog-hidden bg-[#333333] flex justify-center md:pt-[4px] pb-[10px] rounded-[10px] md:rounded-[20px]'>
-      <div className='grid grid-flow-row place-items-center w-[100%]'>
-        <h1 id='socials' className='gradient-text text-[24px] font-bold'>
+    <div className='frog-hidden tw-bg-[#333333] tw-flex tw-justify-center md:tw-pt-[4px] tw-pb-[10px] tw-rounded-[10px] md:tw-rounded-[20px]'>
+      <div className='tw-grid tw-grid-flow-row tw-place-items-center tw-w-[100%]'>
+        <h1 id='socials' className='gradient-text tw-text-[24px] tw-font-bold'>
           SOCIALS
         </h1>
-        <div className='w-[100%] px-[4px] md:px-[10px] grid gap-[4px] md:gap-[8px] md:grid-cols-2'>
+        <div className='tw-w-[100%] tw-px-[4px] md:tw-px-[10px] tw-grid tw-gap-[4px] md:tw-gap-[8px] md:tw-grid-cols-2'>
           {socials.map((SocialInfo, index) => (
             <Social {...SocialInfo} key={index} />
           ))}

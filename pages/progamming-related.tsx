@@ -86,11 +86,11 @@ const ProgammingRelated: NextPage = () => {
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>progamming-related 🖥️</title>
       </Head>
-      <div className='grid grid-flow-row gap-[10px] md:gap-[15px] w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] pb-[50px]'>
-        <div className='frog-hidden bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
-          <div className='grid grid-flow-row'>
-            <h1 className='gradient-text text-[24px] font-bold'>PROGAMMING RELATED</h1>
-            <div className='text-[12px] sm:text-[14px] md:text-[16px]'>
+      <div className='tw-grid tw-grid-flow-row tw-gap-[10px] md:tw-gap-[15px] tw-w-[92%] lg:tw-w-[80%] tw-mx-auto tw-mt-[10px] sm:tw-mt-[30px] md:tw-mt-[50px] tw-pb-[50px]'>
+        <div className='frog-hidden tw-bg-[#333333] tw-flex tw-justify-center tw-px-[6px] tw-pt-[15px] tw-pb-[10px] tw-rounded-[10px] md:tw-rounded-[20px] tw-border-[#b5e48c] tw-border-[4px_0_0_0]'>
+          <div className='tw-grid tw-grid-flow-row'>
+            <h1 className='gradient-text tw-text-[24px] tw-font-bold'>PROGAMMING RELATED</h1>
+            <div className='tw-text-[12px] sm:tw-text-[14px] md:tw-text-[16px]'>
               <ShowHideText title='start'>
                 <h1>no coding experience</h1>
               </ShowHideText>
@@ -145,9 +145,9 @@ const ProgammingRelated: NextPage = () => {
               </ShowHideText>
             </div>
             <div>
-              <h1 className='gradient-text text-[24px] font-bold m-auto w-[max-content] pt-[20px]'>TOOLS</h1>
-              <div className='flex justify-center'>
-                <div className='grid grid-flow-row'>
+              <h1 className='gradient-text tw-text-[24px] tw-font-bold tw-m-auto tw-w-[max-content] tw-pt-[20px]'>TOOLS</h1>
+              <div className='tw-flex tw-justify-center'>
+                <div className='tw-grid tw-grid-flow-row'>
                   <ProgammingThing name='langs' items={langs} />
                   <ProgammingThing name='frontend' items={frontend} />
                   <ProgammingThing name='styling' items={styling} />

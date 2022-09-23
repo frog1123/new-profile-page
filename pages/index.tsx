@@ -40,7 +40,7 @@ const Home: NextPage = () => {
   });
 
   return (
-    <div className='pb-[30px]'>
+    <div className='tw-pb-[30px]'>
       <Head>
         <meta property='og:title' content='frogdude1123' />
         <meta property='og:description' content='profile page' />
@@ -50,15 +50,15 @@ const Home: NextPage = () => {
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>frogdude1123</title>
       </Head>
-      <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px] grid grid-flow-row gap-[10px] md:gap-[15px]'>
+      <div className='tw-w-[92%] lg:tw-w-[80%] tw-mx-auto tw-mt-[10px] sm:tw-mt-[30px] md:tw-mt-[50px] tw-grid tw-grid-flow-row tw-gap-[10px] md:tw-gap-[15px]'>
         <ProfilePicture />
         <Explore />
         <AboutMe />
         <Socials />
         <FeaturedVideo />
         <Links />
-        <div className='m-auto'>
-          <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation'>
+        <div className='tw-m-auto'>
+          <div className='tw-w-[50px] tw-h-[50px] md:tw-w-[80px] md:tw-h-[80px] float-animation'>
             <Image src={umbrella} layout='responsive' alt='' />
           </div>
         </div>

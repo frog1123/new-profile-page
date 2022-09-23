@@ -10,22 +10,22 @@ interface SocialProps {
 export const Social: FC<SocialProps> = ({ image, url, text }) => {
   if (url)
     return (
-      <a href={url} target='_blank' rel='noopener noreferrer' className='cursor-pointer'>
-        <div className='grid grid-cols-[max-content_auto] place-items-center bg-[#282828] rounded-[10px] py-[4px] px-[4px] hover:bg-[#212121]'>
-          <div className='w-[30px] h-[30px] md:w-[50px] md:h-[50px] block place-items-center'>
+      <a href={url} target='_blank' rel='noopener noreferrer' className='tw-cursor-pointer'>
+        <div className='tw-grid tw-grid-cols-[max-content_auto] tw-place-items-center tw-bg-[#282828] tw-rounded-[10px] tw-py-[4px] tw-px-[4px] hover:tw-bg-[#212121]'>
+          <div className='tw-w-[30px] tw-h-[30px] md:tw-w-[50px] md:tw-h-[50px] tw-block tw-place-items-center'>
             <Image src={image} layout='responsive' alt='' />
           </div>
-          <h1 className='mx-[2px] text-white text-[16px] md:text-[20px]'>{text}</h1>
+          <h1 className='tw-mx-[2px] tw-text-white tw-text-[16px] md:tw-text-[20px]'>{text}</h1>
         </div>
       </a>
     );
   else
     return (
-      <div className='grid grid-cols-[max-content_auto] place-items-center bg-[#282828] rounded-[10px] py-[4px] px-[4px]'>
-        <div className='w-[30px] h-[30px] md:w-[50px] md:h-[50px] block place-items-center'>
+      <div className='tw-grid tw-grid-cols-[max-content_auto] tw-place-items-center tw-bg-[#282828] tw-rounded-[10px] tw-py-[4px] tw-px-[4px]'>
+        <div className='tw-w-[30px] tw-h-[30px] md:tw-w-[50px] md:tw-h-[50px] tw-block tw-place-items-center'>
           <Image src={image} layout='responsive' alt='' />
         </div>
-        <h1 className='mx-[2px] text-white text-[16px] md:text-[20px]'>{text}</h1>
+        <h1 className='tw-mx-[2px] tw-text-white tw-text-[16px] md:tw-text-[20px]'>{text}</h1>
       </div>
     );
 };

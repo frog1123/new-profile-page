@@ -13,7 +13,7 @@ import anime_tree from '@public/audio_images/anime_tree.jpg';
 import { BottomThing } from '@components/BottomThing';
 
 const Line: FC = () => {
-  return <div className='w-[100%] h-[2px] bg-[#707070] mx-auto rounded-[10px]'></div>;
+  return <div className='tw-w-[100%] tw-h-[2px] tw-bg-[#707070] tw-mx-auto tw-rounded-[10px]'></div>;
 };
 
 const Music: NextPage = () => {
@@ -57,16 +57,16 @@ const Music: NextPage = () => {
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>music 🎵</title>
       </Head>
-      <div className='w-[92%] lg:w-[80%] mx-auto mt-[10px] sm:mt-[30px] md:mt-[50px]'>
-        <div className='frog-hidden bg-[#333333] flex justify-center px-[6px] pt-[15px] pb-[10px] rounded-[10px] md:rounded-[20px] border-[#b5e48c] border-[4px_0_0_0]'>
-          <div className='grid grid-flow-row place-items-center w-[100%]'>
-            <h1 className='gradient-text text-[24px] font-bold'>MUSIC</h1>
+      <div className='tw-w-[92%] lg:tw-w-[80%] tw-mx-auto tw-mt-[10px] sm:tw-mt-[30px] md:tw-mt-[50px]'>
+        <div className='frog-hidden tw-bg-[#333333] tw-flex tw-justify-center tw-px-[6px] tw-pt-[15px] tw-pb-[10px] tw-rounded-[10px] md:tw-rounded-[20px] tw-border-[#b5e48c] tw-border-[4px_0_0_0]'>
+          <div className='tw-grid tw-grid-flow-row tw-place-items-center tw-w-[100%]'>
+            <h1 className='gradient-text tw-text-[24px] tw-font-bold'>MUSIC</h1>
 
-            <div className='grid grid-flow-row gap-[20px] w-[100%] place-items-center'>
-              <div className='frog-hidden w-[100%] sm:w-[95%] md:w-[90%] bg-[#282828] p-[4px] rounded-[10px]'>
-                <h1 className='gradient-text text-[24px] font-bold'>cool</h1>
+            <div className='tw-grid tw-grid-flow-row tw-gap-[20px] tw-w-[100%] tw-place-items-center'>
+              <div className='frog-hidden tw-w-[100%] sm:tw-w-[95%] md:tw-w-[90%] tw-bg-[#282828] tw-p-[4px] tw-rounded-[10px]'>
+                <h1 className='gradient-text tw-text-[24px] tw-font-bold'>cool</h1>
                 <Line />
-                <div className='pt-[4px]'>
+                <div className='tw-pt-[4px]'>
                   <SongTab image={six_dogs} title='Someone' song='Someone' artist={['6 dogs']} producer={['captaincrunch', 'nebarb']} />
                   <SongTab image={six_dogs} title='No Savage' song='No_Savage' artist={['6 dogs']} producer={['Pretty Pacc']} />
                   <SongTab title='MIA' song='MIA' artist={['shrimp']} producer={['MineSweepa']} />
@@ -76,10 +76,10 @@ const Music: NextPage = () => {
                 </div>
               </div>
 
-              <div className='frog-hidden w-[100%] sm:w-[95%] md:w-[90%] bg-[#282828] p-[4px] rounded-[10px]'>
-                <h1 className='gradient-text text-[24px] font-bold'>instrumentals</h1>
+              <div className='frog-hidden tw-w-[100%] sm:tw-w-[95%] md:tw-w-[90%] tw-bg-[#282828] tw-p-[4px] tw-rounded-[10px]'>
+                <h1 className='gradient-text tw-text-[24px] tw-font-bold'>instrumentals</h1>
                 <Line />
-                <div className='pt-[4px]'>
+                <div className='tw-pt-[4px]'>
                   <SongTab title='time flies' song='time_flies' artist={['jhove']} producer={['idk']} />
                   <SongTab title='Somewhere Away' song='Somewhere_Away' artist={['Goosetaf']} producer={['idk']} />
                   <SongTab image={anime_tree} title='Flossing (Instrumental)' song='Flossing_Instrumental' artist={['6 dogs']} producer={['yungjugg']} />
@@ -88,8 +88,8 @@ const Music: NextPage = () => {
               </div>
             </div>
 
-            <div className='text-center'>
-              <h2 className='text-white pt-[60px]'>I do not claim to own any of the music being used here</h2>
+            <div className='tw-text-center'>
+              <h2 className='tw-text-white tw-pt-[60px]'>I do not claim to own any of the music being used here</h2>
             </div>
           </div>
         </div>

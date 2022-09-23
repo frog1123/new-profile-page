@@ -11,21 +11,21 @@ interface ProjectTabProps {
 
 export const ProjectTab: FC<ProjectTabProps> = ({ projectId, title, madeWith, repoLink, children }) => {
   return (
-    <div className='frog-hidden bg-[#282828] overflow-hidden w-[100%] rounded-[12px] px-[10px]'>
-      <h1 className='gradient-text text-[20px] md:text-[32px]' id={projectId}>
+    <div className='frog-hidden tw-bg-[#282828] tw-overflow-hidden tw-w-[100%] tw-rounded-[12px] tw-px-[10px]'>
+      <h1 className='gradient-text tw-text-[20px] md:tw-text-[32px]' id={projectId}>
         {title}
       </h1>
-      <div className='grid grid-flow-col w-[max-content] bg-[#333333] p-[2px] rounded-[6px]'>
+      <div className='tw-grid tw-grid-flow-col tw-w-[max-content] tw-bg-[#333333] tw-p-[2px] tw-rounded-[6px]'>
         {madeWith.map((icon, index) => (
-          <div className='w-[18px] sm:w-[22px]' key={index}>
+          <div className='tw-w-[18px] sm:tw-w-[22px]' key={index}>
             <Image src={icon} layout='responsive' alt='' />
           </div>
         ))}
       </div>
-      <div className='mt-[4px] md:mt-[6px] text-white text-[12px] sm:text-[14px] md:text-[16px]'>{children}</div>
-      <h1 className='text-white text-[12px] sm:text-[14px] md:text-[16px] mt-[20px]'>
+      <div className='tw-mt-[4px] md:tw-mt-[6px] tw-text-white tw-text-[12px] sm:tw-text-[14px] md:tw-text-[16px]'>{children}</div>
+      <h1 className='tw-text-white tw-text-[12px] sm:tw-text-[14px] md:tw-text-[16px] tw-mt-[20px]'>
         repo link:{' '}
-        <a href={repoLink} rel='noopener noreferrer' className='cursor-pointer'>
+        <a href={repoLink} rel='noopener noreferrer' className='tw-cursor-pointer'>
           <span className='gradient-text'>{repoLink}</span>
         </a>
       </h1>

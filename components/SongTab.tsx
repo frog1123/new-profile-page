@@ -111,26 +111,26 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
   };
 
   return (
-    <div className='bg-[#282828] hover:bg-[#212121] p-[4px] rounded-[6px] flex'>
-      <div className='grid grid-flow-col place-items-center gap-[6px]'>
-        <div className='w-[30px] h-[30px] md:w-[40px] md:h-[40px]'>
+    <div className='tw-bg-[#282828] hover:tw-bg-[#212121] tw-p-[4px] tw-rounded-[6px] tw-flex'>
+      <div className='tw-grid tw-grid-flow-col tw-place-items-center tw-gap-[6px]'>
+        <div className='tw-w-[30px] tw-h-[30px] md:tw-w-[40px] md:tw-h-[40px]'>
           <Image src={typeof image === 'undefined' ? alt : image} alt='' />
         </div>
-        <div className='grid grid-flow-row'>
-          <h1 className='text-white text-[10px] sm:text-[12px] md:text-[14px]'>
+        <div className='tw-grid tw-grid-flow-row'>
+          <h1 className='tw-text-white tw-text-[10px] sm:tw-text-[12px] md:tw-text-[14px]'>
             {artist.map((a, index) => (
               <span key={index}>{(index ? ', ' : '') + a}</span>
             ))}{' '}
             - {title}{' '}
-            <span className='text-[#707070] text-[8px] sm:text-[10px] md:text-[12px] align-middle' id={`duration-current-${song}`}>
+            <span className='tw-text-[#707070] tw-text-[8px] sm:tw-text-[10px] md:tw-text-[12px] tw-align-middle' id={`duration-current-${song}`}>
               00:00
             </span>
-            <span className='text-[#707070] text-[8px] sm:text-[10px] md:text-[12px] align-middle'> / </span>
-            <span className='text-[#707070] text-[8px] sm:text-[10px] md:text-[12px] align-middle' id={`duration-total-${song}`}>
+            <span className='tw-text-[#707070] tw-text-[8px] sm:tw-text-[10px] md:tw-text-[12px] tw-align-middle'> / </span>
+            <span className='tw-text-[#707070] tw-text-[8px] sm:tw-text-[10px] md:tw-text-[12px] tw-align-middle' id={`duration-total-${song}`}>
               00:00
             </span>
           </h1>
-          <h2 className='text-[#707070] text-[10px] md:text-[12px]'>
+          <h2 className='tw-text-[#707070] tw-text-[10px] md:tw-text-[12px]'>
             (prod.{' '}
             {producer.map((p, index) => (
               <span key={index}>{(index ? ', ' : '') + p}</span>
@@ -139,24 +139,24 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
           </h2>
         </div>
       </div>
-      <div className='ml-[auto] grid grid-cols-[max-content_auto] place-items-center'>
+      <div className='tw-ml-[auto] tw-grid tw-grid-cols-[max-content_auto] tw-place-items-center'>
         <audio id={`audio-${song}`} preload='metadata' loop>
           <source src={`/audio/${song}.mp3`} type='audio/mp3' />
         </audio>
-        <div className='grid grid-flow-col place-items-center gap-[4px] md:gap-0'>
+        <div className='tw-grid tw-grid-flow-col tw-place-items-center tw-gap-[4px] md:tw-gap-0'>
           <AudioButton id={`back-${song}`} icon='back' action={() => skipAudio('back')} />
-          <div className='grid place-items-center'>
+          <div className='tw-grid tw-place-items-center'>
             <AudioButton id={`play-${song}`} icon='play' action={playAudio} />
             <AudioButton id={`pause-${song}`} icon='pause' action={pauseAudio} />
           </div>
           <AudioButton id={`forward-${song}`} icon='forward' action={() => skipAudio('forward')} />
         </div>
-        <div className='hidden md:grid grid-cols-[max-content_auto] place-items-center gap-[10px]'>
-          <div className='grid place-items-center'>
+        <div className='tw-hidden tw-md:grid tw-grid-cols-[max-content_auto] tw-place-items-center tw-gap-[10px]'>
+          <div className='tw-grid tw-place-items-center'>
             <AudioButton id={`sound-${song}`} icon='sound' action={muteAudio} />
             <AudioButton id={`mute-${song}`} icon='mute' action={unmuteAudio} />
           </div>
-          <input id={`volume-slider-${song}`} type='range' className='max-w-[120px] lg:max-w-[140px] volume-slider' />
+          <input id={`volume-slider-${song}`} type='range' className='tw-max-w-[120px] lg:tw-max-w-[140px] volume-slider' />
         </div>
       </div>
     </div>

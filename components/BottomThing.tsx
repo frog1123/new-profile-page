@@ -8,11 +8,11 @@ import { removeSmoothScroll } from '@utils/smoothScroll';
 
 export const BottomThing: FC = () => {
   return (
-    <div className='m-auto w-[max-content] pt-[20px]'>
-      <div className='w-[50px] h-[50px] md:w-[80px] md:h-[80px] float-animation m-auto'>
+    <div className='tw-m-auto tw-w-[max-content] tw-pt-[20px]'>
+      <div className='tw-w-[50px] tw-h-[50px] md:tw-w-[80px] md:tw-h-[80px] float-animation tw-m-auto'>
         <Image src={umbrella} layout='responsive' priority alt='' />
       </div>
-      <h1 className='text-white mt-[15px]'>
+      <h1 className='tw-text-white tw-mt-[15px]'>
         return{' '}
         <Link href='/'>
           <a onClick={() => removeSmoothScroll()}>

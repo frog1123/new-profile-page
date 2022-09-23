@@ -2,6 +2,7 @@
 
 module.exports = {
   content: ['./pages/**/*.tsx', './components/**/*.tsx'],
+  prefix: 'tw-',
   darkMode: 'class',
   theme: {
     screens: {
