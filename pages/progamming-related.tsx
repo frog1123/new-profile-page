@@ -138,6 +138,7 @@ const ProgammingRelated: NextPage = () => {
                   thinking about using vercel free tier since heroku free tier is getting removed <br />
                   updated this website (profile-page) <br />
                   also delpoyed this site on vercel, process was really easy signed up and deployed in under 5 mins without reading docs <br />
+                  updated this website again added cool transitions used scss and more <br />
                   <br />
                   <br />
                   confusing stuff: user auth and styled textarea (example: links turn blue) tried to use slatejs but iz too confusing

@@ -23,10 +23,30 @@ module.exports = {
     if (!dev) {
       config.plugins.push(
         new MangleCssClassPlugin({
-          classNameRegExp: '((hover|focus|xs|md|sm|lg|xl)[\\\\]*:)*(tw)-[a-zA-Z0-9-[#-_-]*',
+          classNameRegExp: '((hover|focus|sm|md|lg|xl)[\\\\]*:)*(tw)-[a-zA-Z0-9-[#-_-]*',
           ignorePrefixRegExp: '',
           log: false,
-          classGenerator: original => btoa(original).replace(/=/g, '')
+          classGenerator: original => {
+            const newClass = original
+              .replace(/tw-/g, '')
+              .replace(/grid/, 'g')
+              .replace(/auto/, 'au')
+              .replace(/border/g, 'b')
+              .replace(/center/g, 'ctr')
+              .replace(/rounded/g, 'rd')
+              .replace(/max-content/, 'mc')
+              .replace(/maxcontent/, 'mc')
+              .replace(/-/g, '')
+              .replace(/#/g, '')
+              .replace(/sm:/, '1')
+              .replace(/md:/, '2')
+              .replace(/lg:/, '3')
+              .replace(/xl:/, '4')
+              .replace(/\[/, '')
+              .replace(/\]/, '');
+
+            return btoa(newClass).replace(/=/g, '');
+          }
         })
       );
     }

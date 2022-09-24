@@ -24,7 +24,7 @@ export const ProfilePicture: FC = () => {
                     <img id='fwallpaper' src='/wallpaper.gif' className={`!tw-overflow-hidden !tw-relative tw-object-cover tw-w-[100%] tw-select-none ${styles['wallpaper-hover-effect']}`} alt='' />
                   </div>
                 </div>
-                <div className='tw-z-[1123] tw-my-auto tw-w-[80px] tw-h-[80px] md:tw-w-[140px] md:tw-h-[140px] lg:tw-w-[160px] lg:tw-h-[160px] xl:tw-h-[200px] xl:tw-w-[200px] tw-select-none hover:tw-rotate-[360deg] tw-rounded-[50%] tw-border-[#b5e48c] tw-border-[4px]'>
+                <div className={`${styles['icon-rotate']} tw-z-[1123] tw-my-auto tw-w-[80px] tw-h-[80px] md:tw-w-[140px] md:tw-h-[140px] lg:tw-w-[160px] lg:tw-h-[160px] xl:tw-h-[200px] xl:tw-w-[200px] tw-select-none tw-rounded-[50%] tw-border-[#b5e48c] tw-border-[4px]`}>
                   <Image src={frog_pfp} className='tw-rounded-[50%]' alt='' />
                 </div>
               </div>

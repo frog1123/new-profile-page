@@ -4,6 +4,7 @@ import { UserContext } from '../UserContext';
 
 import { AudioButton } from '@components/AudioButton';
 import alt from '@public/audio_images/alt.jpg';
+import styles from '@styles/SongTab.module.scss';
 
 interface SongTabProps {
   image?: any;
@@ -46,24 +47,24 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
       audioVolume = this.value / 100;
       audio.volume = this.value / 100;
 
-      document.getElementById(`mute-${song}`)?.classList.add('hidden');
-      document.getElementById(`sound-${song}`)?.classList.remove('hidden');
-      document.getElementById(`sound-${song}`)?.classList.add('block');
+      document.getElementById(`mute-${song}`)?.classList.add('tw-hidden');
+      document.getElementById(`sound-${song}`)?.classList.remove('tw-hidden');
+      document.getElementById(`sound-${song}`)?.classList.add('tw-block');
     };
 
     if (!audio.paused)
       setInterval(() => {
         const duration = document.getElementById(`duration-current-${song}`) as any;
         const time = new Date(Math.floor(audio.currentTime) * 1000).toISOString().substring(14, 19);
-        duration.innerHTML = time;
+        if (duration !== null) duration.innerHTML = time;
       }, 1000);
   });
 
   const playAudio = () => {
     const audio = document.getElementById(`audio-${song}`) as any;
-    document.getElementById(`play-${song}`)?.classList.add('hidden');
-    document.getElementById(`pause-${song}`)?.classList.remove('hidden');
-    document.getElementById(`pause-${song}`)?.classList.add('block');
+    document.getElementById(`play-${song}`)?.classList.add('tw-hidden');
+    document.getElementById(`pause-${song}`)?.classList.remove('tw-hidden');
+    document.getElementById(`pause-${song}`)?.classList.add('tw-block');
     setValue({ ...value, pauseCurrentlyPlaying: true, currentlyPlaying: [...value.currentlyPlaying, song] });
 
     audio.play();
@@ -71,9 +72,9 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
 
   const pauseAudio = async () => {
     const audio = document.getElementById(`audio-${song}`) as any;
-    document.getElementById(`pause-${song}`)?.classList.add('hidden');
-    document.getElementById(`play-${song}`)?.classList.remove('hidden');
-    document.getElementById(`play-${song}`)?.classList.add('block');
+    document.getElementById(`pause-${song}`)?.classList.add('tw-hidden');
+    document.getElementById(`play-${song}`)?.classList.remove('tw-hidden');
+    document.getElementById(`play-${song}`)?.classList.add('tw-block');
 
     audio.pause();
   };
@@ -91,9 +92,9 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
   const muteAudio = () => {
     const volume = document.getElementById(`volume-slider-${song}`) as any;
     const audio = document.getElementById(`audio-${song}`) as any;
-    document.getElementById(`sound-${song}`)?.classList.add('hidden');
-    document.getElementById(`mute-${song}`)?.classList.remove('hidden');
-    document.getElementById(`mute-${song}`)?.classList.add('block');
+    document.getElementById(`sound-${song}`)?.classList.add('tw-hidden');
+    document.getElementById(`mute-${song}`)?.classList.remove('tw-hidden');
+    document.getElementById(`mute-${song}`)?.classList.add('tw-block');
 
     audio.volume = 0;
     volume.value = 0;
@@ -102,16 +103,16 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
   const unmuteAudio = () => {
     const volume = document.getElementById(`volume-slider-${song}`) as any;
     const audio = document.getElementById(`audio-${song}`) as any;
-    document.getElementById(`mute-${song}`)?.classList.add('hidden');
-    document.getElementById(`sound-${song}`)?.classList.remove('hidden');
-    document.getElementById(`sound-${song}`)?.classList.add('block');
+    document.getElementById(`mute-${song}`)?.classList.add('tw-hidden');
+    document.getElementById(`sound-${song}`)?.classList.remove('tw-hidden');
+    document.getElementById(`sound-${song}`)?.classList.add('tw-block');
 
     volume.value = audioVolume * 100;
     audio.volume = audioVolume;
   };
 
   return (
-    <div className='tw-bg-[#282828] hover:tw-bg-[#212121] tw-p-[4px] tw-rounded-[6px] tw-flex'>
+    <div className={`${styles['song-tab']} tw-p-[4px] tw-rounded-[6px] tw-flex`}>
       <div className='tw-grid tw-grid-flow-col tw-place-items-center tw-gap-[6px]'>
         <div className='tw-w-[30px] tw-h-[30px] md:tw-w-[40px] md:tw-h-[40px]'>
           <Image src={typeof image === 'undefined' ? alt : image} alt='' />
@@ -151,7 +152,7 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
           </div>
           <AudioButton id={`forward-${song}`} icon='forward' action={() => skipAudio('forward')} />
         </div>
-        <div className='tw-hidden tw-md:grid tw-grid-cols-[max-content_auto] tw-place-items-center tw-gap-[10px]'>
+        <div className='tw-hidden md:tw-grid tw-grid-cols-[max-content_auto] tw-place-items-center tw-gap-[10px]'>
           <div className='tw-grid tw-place-items-center'>
             <AudioButton id={`sound-${song}`} icon='sound' action={muteAudio} />
             <AudioButton id={`mute-${song}`} icon='mute' action={unmuteAudio} />

@@ -8,3 +8,8 @@
     transition: 300ms ease-out;
   }
 }
+
+.icon-rotate:hover {
+  transform: rotate(360deg);
+  transition: 300ms cubic-bezier(1, 0, 0.5, 1);
+}

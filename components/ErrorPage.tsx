@@ -20,7 +20,7 @@ export const ErrorPage: FC<ErrorPageProps> = ({ error, message, title }) => {
       <div className='tw-h-[100vh] tw-flex tw-justify-center'>
         <div className='tw-flex tw-my-auto'>
           <div className='tw-grid tw-grid-flow-row tw-gap-[10px] tw-place-items-center'>
-            <div className='tw-w-[50px] tw-h-[50px] md:tw-w-[80px] md:tw-h-[80px] tw-float-animation'>
+            <div className='tw-w-[50px] tw-h-[50px] md:tw-w-[80px] md:tw-h-[80px] float-animation'>
               <Image src={campsite} layout='responsive' alt='' />
             </div>
             <div className='tw-grid tw-grid-flow-row tw-place-items-center'>

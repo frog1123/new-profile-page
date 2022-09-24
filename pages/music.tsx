@@ -26,9 +26,9 @@ const Music: NextPage = () => {
 
       if (value.currentlyPlaying[0] !== '') {
         const audio = document.getElementById(`audio-${value.currentlyPlaying[0]}`) as any;
-        document.getElementById(`pause-${value.currentlyPlaying[0]}`)?.classList.add('hidden');
-        document.getElementById(`play-${value.currentlyPlaying[0]}`)?.classList.remove('hidden');
-        document.getElementById(`play-${value.currentlyPlaying[0]}`)?.classList.add('block');
+        document.getElementById(`pause-${value.currentlyPlaying[0]}`)?.classList.add('tw-hidden');
+        document.getElementById(`play-${value.currentlyPlaying[0]}`)?.classList.remove('tw-hidden');
+        document.getElementById(`play-${value.currentlyPlaying[0]}`)?.classList.add('tw-block');
         audio.pause();
         audio.currentTime = 0;
       }

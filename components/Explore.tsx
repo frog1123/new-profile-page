@@ -1,9 +1,11 @@
 import type { FC } from 'react';
 
+import styles from '@styles/Explore.module.scss';
+
 const FrogButton: FC<{ text: string; location: string }> = ({ text, location }) => {
   return (
     <a href={`#${location}`}>
-      <button className='dag-gradient tw-rounded-[10px] sm:hover:tw-translate-y-[-8px] tw-px-[4px] tw-py-[2px] tw-w-[100%] sm:tw-w-[max-content]'>
+      <button className={`dag-gradient tw-rounded-[10px] ${styles['button-hover-effect']} tw-px-[4px] tw-py-[2px] tw-w-[100%] sm:tw-w-[max-content]`}>
         <h2 className='tw-text-white md:tw-text-[18px]'>{text}</h2>
       </button>
     </a>

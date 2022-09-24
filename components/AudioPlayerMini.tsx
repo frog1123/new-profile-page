@@ -13,26 +13,26 @@ export const AudioPlayerMini: FC = () => {
       audioVolume = this.value / 100;
       audio.volume = this.value / 100;
 
-      document.getElementById('mute')?.classList.add('hidden');
-      document.getElementById('sound')?.classList.remove('hidden');
-      document.getElementById('sound')?.classList.add('block');
+      document.getElementById('mute')?.classList.add('tw-hidden');
+      document.getElementById('sound')?.classList.remove('tw-hidden');
+      document.getElementById('sound')?.classList.add('tw-block');
     };
   });
 
   const playAudio = () => {
     const audio = document.getElementById('audio') as any;
-    document.getElementById('play')?.classList.add('hidden');
-    document.getElementById('pause')?.classList.remove('hidden');
-    document.getElementById('pause')?.classList.add('block');
+    document.getElementById('play')?.classList.add('tw-hidden');
+    document.getElementById('pause')?.classList.remove('tw-hidden');
+    document.getElementById('pause')?.classList.add('tw-block');
 
     audio.play();
   };
 
   const pauseAudio = () => {
     const audio = document.getElementById('audio') as any;
-    document.getElementById('pause')?.classList.add('hidden');
-    document.getElementById('play')?.classList.remove('hidden');
-    document.getElementById('play')?.classList.add('block');
+    document.getElementById('pause')?.classList.add('tw-hidden');
+    document.getElementById('play')?.classList.remove('tw-hidden');
+    document.getElementById('play')?.classList.add('tw-block');
 
     audio.pause();
   };
@@ -47,9 +47,9 @@ export const AudioPlayerMini: FC = () => {
   const muteAudio = () => {
     const volume = document.getElementById('volume-slider') as any;
     const audio = document.getElementById('audio') as any;
-    document.getElementById('sound')?.classList.add('hidden');
-    document.getElementById('mute')?.classList.remove('hidden');
-    document.getElementById('mute')?.classList.add('block');
+    document.getElementById('sound')?.classList.add('tw-hidden');
+    document.getElementById('mute')?.classList.remove('tw-hidden');
+    document.getElementById('mute')?.classList.add('tw-block');
 
     audio.volume = 0;
     volume.value = 0;
@@ -58,9 +58,9 @@ export const AudioPlayerMini: FC = () => {
   const unmuteAudio = () => {
     const volume = document.getElementById('volume-slider') as any;
     const audio = document.getElementById('audio') as any;
-    document.getElementById('mute')?.classList.add('hidden');
-    document.getElementById('sound')?.classList.remove('hidden');
-    document.getElementById('sound')?.classList.add('block');
+    document.getElementById('mute')?.classList.add('tw-hidden');
+    document.getElementById('sound')?.classList.remove('tw-hidden');
+    document.getElementById('sound')?.classList.add('tw-block');
 
     volume.value = audioVolume * 100;
     audio.volume = audioVolume;
