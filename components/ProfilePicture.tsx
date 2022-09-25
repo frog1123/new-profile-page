@@ -21,7 +21,7 @@ export const ProfilePicture: FC = () => {
               <div className='tw-relative tw-w-[100%] tw-h-[100%] tw-flex tw-justify-center tw-align-middle'>
                 <div className='tw-z-[420] tw-absolute tw-w-[100%] tw-top-[50%] tw-transform tw-translate-y-[-50%]'>
                   <div className='tw-w-[100%] tw-hidden sm:tw-block tw-h-[50px] md:tw-h-[80px] lg:tw-h-[100px] xl:tw-h-[120px] tw-border-[#b5e48c] tw-border-[4px] tw-rounded-[100px] tw-overflow-hidden'>
-                    <img id='fwallpaper' src='/wallpaper.gif' className={`!tw-overflow-hidden !tw-relative tw-object-cover tw-w-[100%] tw-select-none ${styles['wallpaper-hover-effect']}`} alt='' />
+                    <img id='fwallpaper' src='/wallpaper.webm' className={`!tw-overflow-hidden !tw-relative tw-object-cover tw-w-[100%] tw-select-none ${styles['wallpaper-hover-effect']}`} alt='' />
                   </div>
                 </div>
                 <div className={`${styles['icon-rotate']} tw-z-[1123] tw-my-auto tw-w-[80px] tw-h-[80px] md:tw-w-[140px] md:tw-h-[140px] lg:tw-w-[160px] lg:tw-h-[160px] xl:tw-h-[200px] xl:tw-w-[200px] tw-select-none tw-rounded-[50%] tw-border-[#b5e48c] tw-border-[4px]`}>
