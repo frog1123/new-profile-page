@@ -88,7 +88,7 @@ export const AudioPlayerMini: FC = () => {
             <AudioButton id='sound' icon='sound' action={muteAudio} />
             <AudioButton id='mute' icon='mute' action={unmuteAudio} />
           </div>
-          <input id='volume-slider' type='range' className='tw-max-w-[120px] lg:tw-max-w-[140px] volume-slider' />
+          <input aria-label='music volume slider' id='volume-slider' type='range' className='tw-max-w-[120px] lg:tw-max-w-[140px] volume-slider' />
         </div>
       </div>
     </div>

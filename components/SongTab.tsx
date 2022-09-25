@@ -157,7 +157,7 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
             <AudioButton id={`sound-${song}`} icon='sound' action={muteAudio} />
             <AudioButton id={`mute-${song}`} icon='mute' action={unmuteAudio} />
           </div>
-          <input id={`volume-slider-${song}`} type='range' className='tw-max-w-[120px] lg:tw-max-w-[140px] volume-slider' />
+          <input aria-label='music volume slider' id={`volume-slider-${song}`} type='range' className='tw-max-w-[120px] lg:tw-max-w-[140px] volume-slider' />
         </div>
       </div>
     </div>
