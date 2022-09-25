@@ -115,7 +115,7 @@ export const SongTab: FC<SongTabProps> = ({ image, song, title, artist, producer
     <div className={`${styles['song-tab']} tw-p-[4px] tw-rounded-[6px] tw-flex`}>
       <div className='tw-grid tw-grid-flow-col tw-place-items-center tw-gap-[6px]'>
         <div className='tw-w-[30px] tw-h-[30px] md:tw-w-[40px] md:tw-h-[40px]'>
-          <Image src={typeof image === 'undefined' ? alt : image} alt='' />
+          <Image src={typeof image === 'undefined' ? alt : image} className='tw-rounded-[4px]' alt='' />
         </div>
         <div className='tw-grid tw-grid-flow-row'>
           <h1 className='tw-text-white tw-text-[10px] sm:tw-text-[12px] md:tw-text-[14px]'>

@@ -49,6 +49,7 @@ import nest from '@public/progamming/quit/nest.svg';
 import netlify from '@public/progamming/planning/netlify.svg';
 import sass from '@public/progamming/planning/sass.svg';
 import rust from '@public/progamming/planning/rust.svg';
+import qwik from '@public/progamming/planning/qwik.svg';
 
 const langs = [js, ts];
 const frontend = [react, next, html];
@@ -59,7 +60,7 @@ const deploying = [heroku, vercel, docker];
 const packageManagers = [pnpm, yarn, npm];
 const devTools = [git];
 const quit = [go, nest];
-const planning = [netlify, sass, rust];
+const planning = [netlify, sass, rust, qwik];
 
 const ProgammingRelated: NextPage = () => {
   useEffect(() => {
