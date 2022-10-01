@@ -140,6 +140,8 @@ const ProgammingRelated: NextPage = () => {
                   updated this website (profile-page) <br />
                   also delpoyed this site on vercel, process was really easy signed up and deployed in under 5 mins without reading docs <br />
                   updated this website again added cool transitions used scss and more <br />
+                  uploaded some tutorials for my yt channel for specific usecases <br />
+                  working on another discord bot (iori-bot) <br />
                   <br />
                   <br />
                   confusing stuff: user auth and styled textarea (example: links turn blue) tried to use slatejs but iz too confusing
