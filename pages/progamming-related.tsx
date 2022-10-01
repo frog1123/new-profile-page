@@ -142,6 +142,8 @@ const ProgammingRelated: NextPage = () => {
                   updated this website again added cool transitions used scss and more <br />
                   uploaded some tutorials for my yt channel for specific usecases <br />
                   working on another discord bot (iori-bot) <br />
+                  didnt work on heroku so made iori-bot-v2 and it worked even tho it was the same <br />
+                  took down frogdude1123.herokuapp.com to host iori-bot <br />
                   <br />
                   <br />
                   confusing stuff: user auth and styled textarea (example: links turn blue) tried to use slatejs but iz too confusing
