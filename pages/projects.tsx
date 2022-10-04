@@ -17,8 +17,10 @@ import apollo from '@public/progamming/api/apollo.svg';
 import graphql from '@public/progamming/api/graphql.svg';
 import nodejs from '@public/progamming/backend/nodejs.svg';
 import mongodb from '@public/progamming/backend/mongodb.png';
+import prisma from '@public/progamming/backend/prisma.svg';
 import heroku from '@public/progamming/deploying/heroku.svg';
 import vercel from '@public/progamming/deploying/vercel.svg';
+import docker from '@public/progamming/deploying/docker.svg';
 import rust from '@public/progamming/planning/rust.svg';
 import thing_1 from '@public/other/thing_1.png';
 import thing_2 from '@public/other/thing_2.png';
@@ -106,6 +108,9 @@ const Projects: NextPage = () => {
                 </a>{' '}
                 (heroku site may be down cuz theyre removing the free tier). not much else to say since ur viewing it rn
               </h1>
+            </ProjectTab>
+            <ProjectTab title='iori-bot' projectId='iori-bot' madeWith={[ts, nodejs, prisma, mongodb, heroku, docker]} repoLink='https://github.com/frog1123/iori-bot-v2'>
+              better discord bot. it uses typescript which is good since discordjs docs r kinda confusing. it was kinda annoying at first cuz esmodules r different than commonjs but it was worth after setting it up. also prisma works well with ts since it generates types. this bot uses mongodb cuz it had a economy system where users could register. it was deployed to heroku, but it could use docker i just didnt find any good places to host it with docker
             </ProjectTab>
           </div>
         </div>

@@ -6,7 +6,7 @@ interface ProjectTabProps {
   title: string;
   madeWith: StaticImageData[];
   repoLink: string;
-  children: JSX.Element[] | JSX.Element;
+  children: string | JSX.Element[] | JSX.Element;
 }
 
 export const ProjectTab: FC<ProjectTabProps> = ({ projectId, title, madeWith, repoLink, children }) => {
