@@ -16,7 +16,10 @@ import { addSmoothScroll } from '@utils/smoothScroll';
 const Home: NextPage = () => {
   useEffect(() => {
     addSmoothScroll();
-    console.log("%c        __ _.--..--._ _\r\n     .-' _/   _/\\_   \\_'-.\r\n    |__ /   _/\\__/\\_   \\__|\r\n       |___/\\_\\__/  \\___|\r\n              \\__/\r\n              \\__/\r\n               \\__/\r\n                \\__/\r\n             ____\\__/___\r\n       . - '             ' -.\r\n      /                      \\\r\n~~~~~~~  ~~~~~ ~~~~~  ~~~ ~~~  ~~~~~\r\n      ~~~   ~~~~~   ~~~   ~~ ~  ~ ~ ~\n             frogdude1123", 'color: #d9ed92');
+    console.log(
+      "%c        __ _.--..--._ _\r\n     .-' _/   _/\\_   \\_'-.\r\n    |__ /   _/\\__/\\_   \\__|\r\n       |___/\\_\\__/  \\___|\r\n              \\__/\r\n              \\__/\r\n               \\__/\r\n                \\__/\r\n             ____\\__/___\r\n       . - '             ' -.\r\n      /                      \\\r\n~~~~~~~  ~~~~~ ~~~~~  ~~~ ~~~  ~~~~~\r\n      ~~~   ~~~~~   ~~~   ~~ ~  ~ ~ ~\n             frogdude1123",
+      'color: #d9ed92'
+    );
 
     const emojis: string[] = ['🌴', '💫', '🐸', '🌱', '🍃', '🌲', '🍄', '☃️'];
     document.title = `frogdude1123 ${emojis[Math.floor(Math.random() * emojis.length)]}`;
@@ -44,8 +47,8 @@ const Home: NextPage = () => {
       <Head>
         <meta property='og:title' content='frogdude1123' />
         <meta property='og:description' content='profile page' />
-        <meta property='og:url' content='https://frogdude1123.herokuapp.com/' />
-        <meta property='og:image' content='https://frogdude1123.herokuapp.com/frog.png' />
+        <meta property='og:url' content='https://frogdude1123.vercel.app/' />
+        <meta property='og:image' content='https://frogdude1123.vercel.app/frog.png' />
         <meta name='description' content='profile page' />
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>frogdude1123</title>

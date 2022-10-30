@@ -57,8 +57,8 @@ const Projects: NextPage = () => {
       <Head>
         <meta property='og:title' content='frogdude1123' />
         <meta property='og:description' content='projects' />
-        <meta property='og:url' content='https://frogdude1123.herokuapp.com/projects' />
-        <meta property='og:image' content='https://frogdude1123.herokuapp.com/frog.png' />
+        <meta property='og:url' content='https://frogdude1123.vercel.app/projects' />
+        <meta property='og:image' content='https://frogdude1123.vercel.app/frog.png' />
         <meta name='description' content='projects' />
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>projects</title>

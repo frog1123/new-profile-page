@@ -51,8 +51,8 @@ const Music: NextPage = () => {
       <Head>
         <meta property='og:title' content='frogdude1123' />
         <meta property='og:description' content='music i like' />
-        <meta property='og:url' content='https://frogdude1123.herokuapp.com/music' />
-        <meta property='og:image' content='https://frogdude1123.herokuapp.com/frog.png' />
+        <meta property='og:url' content='https://frogdude1123.vercel.app/music' />
+        <meta property='og:image' content='https://frogdude1123.vercel.app/frog.png' />
         <meta name='description' content='music i like' />
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>music 🎵</title>

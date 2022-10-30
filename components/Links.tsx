@@ -28,6 +28,7 @@ export const Links: FC = () => {
           <FrogLink text='projects' url='/projects' />
           <FrogLink text='progamming-related' url='/progamming-related' />
           <FrogLink text='music i like' url='/music' />
+          <FrogLink text='downloads' url='/downloads' />
         </div>
       </div>
     </div>
