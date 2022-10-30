@@ -27,7 +27,7 @@ const Music: NextPage = () => {
         <meta property='og:image' content='https://frogdude1123.vercel.app/frog.png' />
         <meta name='description' content='music i like' />
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
-        <title>music 🎵</title>
+        <title>downloads</title>
       </Head>
       <div className='tw-w-[92%] lg:tw-w-[80%] tw-mx-auto tw-mt-[10px] sm:tw-mt-[30px] md:tw-mt-[50px]'>
         <div className='frog-hidden tw-bg-[#333333] tw-flex tw-justify-center tw-px-[6px] tw-pt-[15px] tw-pb-[10px] tw-rounded-[10px] md:tw-rounded-[20px] tw-border-[#b5e48c] tw-border-[4px_0_0_0]'>
