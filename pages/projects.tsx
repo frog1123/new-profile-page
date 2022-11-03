@@ -26,6 +26,7 @@ import thing_1 from '@public/other/thing_1.png';
 import thing_2 from '@public/other/thing_2.png';
 import thing_3 from '@public/other/thing_3.png';
 import thing_4 from '@public/other/thing_4.png';
+import Link from 'next/link';
 
 const Projects: NextPage = () => {
   const thingArray = [thing_1, thing_2, thing_3, thing_4];
@@ -148,6 +149,26 @@ const Projects: NextPage = () => {
               better discord bot. made this after fBot, when i knew what i was doing, i didnt need to watch any tutorials for this bot. it uses typescript which is good since discordjs docs r kinda
               confusing. it was kinda annoying at first cuz esmodules r different than commonjs but it was worth after setting it up. also prisma works well with ts since it generates types. this bot
               uses mongodb cuz it had a economy system where users could register. it was deployed to heroku, but it could use docker i just didnt find any good places to host it with docker
+            </ProjectTab>
+            <ProjectTab title='github-stellar-theme' projectId='github-stellar-themeav' madeWith={[ts, sass]} repoLink='https://github.com/frog1123/github-stellar-theme-v2'>
+              <h1>
+                stellar theme for <Gr>github</Gr> it changed some colors and other stuff on the github website its a extension. got inspired from the <Gr>material icons</Gr> extension i made a{' '}
+                <Gr>video</Gr> showcasing it and how to install it. didnt publish to chrome webstore since it costs <Gr>$5</Gr> to do that. download can be found in{' '}
+                <Link href='/downloads'>
+                  <a>
+                    <Gr>/downloads</Gr>
+                  </a>
+                </Link>
+              </h1>
+              <div className='tw-aspect-video tw-w-[80%] tw-max-w-[600px] tw-m-auto tw-mt-[10px]'>
+                <iframe
+                  src='https://www.youtube.com/embed/6lCmJY-kG6g'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                  allowFullScreen
+                  id='featured-video'
+                  className='gradient-border disable-select tw-w-[100%] tw-h-[100%]'
+                ></iframe>
+              </div>
             </ProjectTab>
           </div>
         </div>
