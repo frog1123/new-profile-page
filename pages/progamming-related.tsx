@@ -50,6 +50,7 @@ import netlify from '@public/progamming/planning/netlify.svg';
 import sass from '@public/progamming/planning/sass.svg';
 import rust from '@public/progamming/planning/rust.svg';
 import qwik from '@public/progamming/planning/qwik.svg';
+import { Gr } from '@components/Gr';
 
 const langs = [js, ts];
 const frontend = [react, next, html];
@@ -109,10 +110,10 @@ const ProgammingRelated: NextPage = () => {
               </ShowHideText>
               <ShowHideText title='2022'>
                 <h1>
-                  tried to make a website with html, css, and js. thought it was a cool idea. deployed it in github pages. learned basic html and css through that project. <br />
+                  tried to make a <Gr>website</Gr> with html, css, and js. thought it was a cool idea. deployed it in github pages. learned basic html and css through that project. <br />
                   after i tried making an incremental game with html css and js, also deployed to github pages, also tried out electronjs but never ported the project to it <br />
                   after tried redesigning it in react. tried heroku cuz github pages would not work well with react learned data fethcing in react <br />
-                  tried making a basic rest api in js with express <br />
+                  tried making a basic rest api in js with <Gr>express</Gr> <br />
                   after that i tried making a fullstack app with an api and a react frontend <br />
                   learned nextjs wasnt that hard since its based off react <br />
                   nextjs was much more organized and has ssr which is cool (cool) <br />
@@ -127,26 +128,39 @@ const ProgammingRelated: NextPage = () => {
                   quit cuz it had a lot of boilerplate, was kinda slow, and the docs pretty much only focused on typegraphql <br />
                   after tried learning go since its a compiled lang which should be fast <br />
                   got kinda bored and went back to js <br />
-                  around this time tried puppeteer again to make a reddit and twitter bot <br />
+                  around this time tried <Gr>puppeteer</Gr> again to make a reddit and twitter bot <br />
                   got demotivated after the twitter acc got locked out after like 5 logins <br />
                   tried making a cli in js called lotus-create <br />
                   it generates basic hello world project in js or ts <br />
                   stopped working on zwav and started emberwave which is basically zwav but better <br />
-                  started using prisma as an orm <br />
+                  started using <Gr>prisma</Gr> as an orm <br />
                   decided to redesign the profile page again which is what is currently happening <br />
                   tried learning rust cuz its fast stuff <br />
                   made a cryptopunk style image generator <br />
                   thinking about using vercel free tier since heroku free tier is getting removed <br />
                   updated this website (profile-page) <br />
-                  also delpoyed this site on vercel, process was really easy signed up and deployed in under 5 mins without reading docs <br />
+                  also delpoyed this site on <Gr>vercel</Gr>, process was really easy signed up and deployed in under 5 mins without reading docs <br />
                   updated this website again added cool transitions used scss and more <br />
                   uploaded some tutorials for my yt channel for specific usecases <br />
-                  working on another discord bot (iori-bot) <br />
+                  working on another <Gr>discord bot</Gr> (iori-bot) <br />
                   didnt work on heroku so made iori-bot-v2 and it worked even tho it was the same <br />
-                  took down frogdude1123.herokuapp.com to host iori-bot <br />
+                  took down frogdude1123.herokuapp.com to host <Gr>iori-bot</Gr> <br />
+                  tried obfuscating classes for this website <br />
+                  took a long time but figured it out <br />
+                  decided to upload video about it <br />
+                  started uploading content regularly <br />
+                  started working on a <Gr>chrome extension</Gr> for github (theme) inspired from the material icons extension <br />
+                  did that and made video abt it <br />
+                  started working on frog incremental <br />
+                  was going to be a remake <br />
+                  it was also first time using <Gr>gulp</Gr>. i used it to minify html css js and used gulp-babel to turn js to es5 <br />
+                  you can try it on <Gr>https://frog-incremental.vercel.app/</Gr> <br />
+                  nextjs updated to <Gr>v13</Gr> but im not going to update this website cuz i dont feel like it <br />
                   <br />
                   <br />
-                  confusing stuff: user auth and styled textarea (example: links turn blue) tried to use slatejs but iz too confusing
+                  confusing stuff: <br />
+                  - user auth and styled textarea (example: links turn blue) tried to use slatejs but iz too confusing <br />
+                  - streaming 24/7 to yt messed around with ffmpeg <br />
                 </h1>
               </ShowHideText>
             </div>

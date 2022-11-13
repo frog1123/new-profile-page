@@ -1,0 +1,62 @@
+.iframe-container {
+  position: relative;
+  height: calc(104px * 1.5 + 50px);
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: scroll;
+  padding-left: 100px;
+
+  @media screen and (max-width: 1300px) {
+    height: calc(104px * 1.2 + 50px);
+  }
+
+  @media screen and (max-width: 600px) {
+    height: calc(104px * 0.8 + 50px);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #00000000;
+  }
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: linear-gradient(to top, #d9ed92 0%, #b5e48c 100%);
+    background: -webkit-linear-gradient(to top, #d9ed92 0%, #b5e48c 100%);
+    background: -moz-linear-gradient(to top, #d9ed92 0%, #b5e48c 100%);
+  }
+}
+
+.iframe {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  // prettier-ignore
+  transform: 
+    translateX(-50%) 
+    translateY(-50%) 
+    scale(1.5);
+  width: 663px;
+  height: 104px;
+
+  @media screen and (max-width: 1300px) {
+    // prettier-ignore
+    transform: 
+      translateX(-50%) 
+      translateY(-50%) 
+      scale(1.2);
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  @media screen and (max-width: 600px) {
+    // prettier-ignore
+    transform: 
+      translateX(-50%) 
+      translateY(-50%) 
+      scale(0.8);
+  }
+}

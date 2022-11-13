@@ -12,6 +12,7 @@ import { Explore } from '@components/Explore';
 
 import umbrella from '@public/umbrella.svg';
 import { addSmoothScroll } from '@utils/smoothScroll';
+import { Contributions } from '../components/Contributions';
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -58,6 +59,7 @@ const Home: NextPage = () => {
         <Explore />
         <AboutMe />
         <Socials />
+        {/* <Contributions /> */}
         <FeaturedVideo />
         <Links />
         <div className='tw-m-auto'>
