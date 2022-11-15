@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { BottomThing } from '@components/BottomThing';
 import { DownloadContainer } from '@components/DownloadContainer';
 
-const Music: NextPage = () => {
+const Downloads: NextPage = () => {
   useEffect(() => {
     const hiddenElements = document.querySelectorAll('.frog-hidden');
 
@@ -46,4 +46,4 @@ const Music: NextPage = () => {
   );
 };
 
-export default Music;
+export default Downloads;
