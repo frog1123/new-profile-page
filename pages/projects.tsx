@@ -159,6 +159,12 @@ const Projects: NextPage = () => {
                     <Gr>/downloads</Gr>
                   </a>
                 </Link>
+                <br />
+                <br />
+                UPDATE: i got a chrome developer account and published the extension on the chrome webstore you can install it at{' '}
+                <a href='https://chrome.google.com/webstore/detail/github-stellar-theme/chkkhpmjibgmacpgidnmmdolkdbfheha/related' rel='noopener noreferrer'>
+                  <Gr>https://chrome.google.com/webstore/detail/github-stellar-theme/chkkhpmjibgmacpgidnmmdolkdbfheha/related</Gr>
+                </a>
               </h1>
               <div className='tw-aspect-video tw-w-[80%] tw-max-w-[600px] tw-m-auto tw-mt-[10px]'>
                 <iframe
