@@ -37,6 +37,7 @@ const Downloads: NextPage = () => {
               <DownloadContainer name='github-stellar-theme-v2@1.0.0.zip' size='19.6KB' downloadUrl='/downloads/github-stellar-theme-v2@1.0.0.zip' />
               <DownloadContainer name='github-stellar-theme-v2@1.0.1.zip' size='20.5KB' downloadUrl='/downloads/github-stellar-theme-v2@1.0.1.zip' />
               <DownloadContainer name='github-stellar-theme-v2@1.0.2.zip' size='20.3KB' downloadUrl='/downloads/github-stellar-theme-v2@1.0.2.zip' />
+              <DownloadContainer name='github-stellar-theme-v2@1.0.3.zip' size='23.8KB' downloadUrl='/downloads/github-stellar-theme-v2@1.0.3.zip' />
             </div>
           </div>
         </div>
