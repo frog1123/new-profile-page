@@ -25,7 +25,7 @@ const Downloads: NextPage = () => {
         <meta property='og:description' content='downloads' />
         <meta property='og:url' content='https://frogdude1123.vercel.app/downloads' />
         <meta property='og:image' content='https://frogdude1123.vercel.app/frog.png' />
-        <meta name='description' content='music i like' />
+        <meta name='description' content='downloads' />
         <meta name='keywords' content='frogdude1123, frogdude, 1123, frog, dude, frog1123' />
         <title>downloads</title>
       </Head>
