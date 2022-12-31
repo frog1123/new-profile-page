@@ -43,6 +43,7 @@ const Downloads: NextPage = () => {
               <h1 className='gradient-text tw-text-[18px] tw-font-bold tw-m-auto'>frogtopia x</h1>
               <DownloadContainer name='frogtopia_x_100days' size='60.89MB' text='mediafire' externalUrl='https://www.mediafire.com/file/ub54hlep9ea29rm/frogtopia_x_100days.zip/file' />
               <DownloadContainer name='frogtopia_x_200days' size='244.74MB' text='mediafire' externalUrl='https://www.mediafire.com/file/k18bee2ckx9y9bt/frogtopia_x_200days.zip/file' />
+              <DownloadContainer name='frogtopia_x_300days' size='340.87MB' text='mediafire' externalUrl='https://www.mediafire.com/file/nu68kyfesd2csgo/frogtopia_x_300days.zip/file' />
             </div>
           </div>
         </div>
