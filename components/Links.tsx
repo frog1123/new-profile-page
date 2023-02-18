@@ -27,7 +27,7 @@ export const Links: FC = () => {
         <div className='tw-grid tw-grid-flow-row'>
           <FrogLink text='projects' url='/projects' />
           <FrogLink text='progamming-related' url='/progamming-related' />
-          <FrogLink text='music i like' url='/music' />
+          {/* <FrogLink text='music' url='/music' /> */}
           <FrogLink text='downloads' url='/downloads' />
         </div>
       </div>
