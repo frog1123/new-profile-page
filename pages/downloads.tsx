@@ -45,6 +45,7 @@ const Downloads: NextPage = () => {
               <DownloadContainer name='frogtopia_x_200days' size='244.74MB' text='mediafire' externalUrl='https://www.mediafire.com/file/k18bee2ckx9y9bt/frogtopia_x_200days.zip/file' />
               <DownloadContainer name='frogtopia_x_300days' size='340.87MB' text='mediafire' externalUrl='https://www.mediafire.com/file/nu68kyfesd2csgo/frogtopia_x_300days.zip/file' />
               <DownloadContainer name='frogtopia_x_400days' size='469.97MB' text='mediafire' externalUrl='https://www.mediafire.com/file/zcd2h0m5alk8pvi/frogtopia_x_400days.zip/file' />
+              <DownloadContainer name='frogtopia_x_500days' size='582.04MB' text='mediafire' externalUrl='https://www.mediafire.com/file/c7cv4abn36k9up5/frogtopia_x_500days.zip/file' />
             </div>
           </div>
         </div>
