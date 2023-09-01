@@ -11,23 +11,29 @@ export const NewsTicker: FC = () => {
   }, []);
 
   // prettier-ignore
+  // const newsTickerMessages = [
+  //   'hello i am frog dude',
+  //   'froggie',
+  //   'if it works it works',
+  //   `it is ${currentDate?.getDay() === 3 ? '' : 'not'} wednesday my dudes ${currentDate?.getDay() === 3 ? ':)' : ':('}`,
+  //   'boj doog siht daer uoy fi',
+  //   'can you get the same message twice?',
+  //   'can you get the same message twice?',
+  //   'i like frogs',
+  //   'was thinking about putting the whole bee movie script here',
+  //   'dudefrog3211',
+  //   'no one:         people on yt: use this bad template',
+  //   '(ノ°Д°）ノ︵ ┻━┻',
+  //   'first',
+  //   'if u r reading this u r very cool',
+  //   'vibes',
+  //   'certified frog moment'
+  // ]
+
   const newsTickerMessages = [
-    'hello i am frog dude',
-    'froggie',
-    'if it works it works',
-    `it is ${currentDate?.getDay() === 3 ? '' : 'not'} wednesday my dudes ${currentDate?.getDay() === 3 ? ':)' : ':('}`,
-    'boj doog siht daer uoy fi',
-    'can you get the same message twice?',
-    'can you get the same message twice?',
-    'i like frogs',
-    'was thinking about putting the whole bee movie script here',
-    'dudefrog3211',
-    'no one:         people on yt: use this bad template',
-    '(ノ°Д°）ノ︵ ┻━┻',
-    'first',
-    'if u r reading this u r very cool',
-    'vibes',
-    'certified frog moment'
+    'frog',
+    'dude',
+    '1123'
   ]
 
   return (

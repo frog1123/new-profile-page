@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 
 import { ProfilePicture } from '@components/ProfilePicture';
 import { AboutMe } from '@components/AboutMe';
@@ -13,6 +13,7 @@ import { Explore } from '@components/Explore';
 import umbrella from '@public/umbrella.svg';
 import { addSmoothScroll } from '@utils/smoothScroll';
 import { Contributions } from '../components/Contributions';
+import { UserContext } from 'UserContext';
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
     }, 5000);
   }, []);
 
+  const { value, setValue } = useContext(UserContext);
   useEffect(() => {
     const hiddenElements = document.querySelectorAll('.frog-hidden');
 
@@ -56,8 +58,8 @@ const Home: NextPage = () => {
       </Head>
       <div className='tw-w-[92%] lg:tw-w-[80%] tw-mx-auto tw-mt-[10px] sm:tw-mt-[30px] md:tw-mt-[50px] tw-grid tw-grid-flow-row tw-gap-[10px] md:tw-gap-[15px]'>
         <ProfilePicture />
-        <Explore />
         <AboutMe />
+        <Explore />
         <Socials />
         {/* <Contributions /> */}
         <FeaturedVideo />

@@ -35,4 +35,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-j.txt
+z0.txt
+z1.txt
+z2.txt

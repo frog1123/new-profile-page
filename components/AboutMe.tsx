@@ -11,9 +11,9 @@ export const AboutMe: FC = () => {
           ABOUT ME
         </h1>
         <p className='tw-text-white tw-text-center tw-whitespace-pre-wrap tw-px-[2px]'>
-          <span className={styles.wave}>👋</span> hello im <span className='gradient-text'>frogdude1123</span> idk what else to add here lmao
+          <span className={styles.wave}>👋</span> hello im <span className='gradient-text'>frogdude1123</span>
           <br />
-          ok <span className='gradient-text'>bye</span>
+          <span className='gradient-text'>bye</span>
         </p>
         <br />
         <div>

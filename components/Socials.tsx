@@ -20,7 +20,7 @@ const socials = [
   { image: youtube_icon, text: 'frogdude1123', url: 'https://www.youtube.com/@frogdude1123/featured' },
   { image: steam_icon, text: 'frogdude1123', url: 'https://steamcommunity.com/id/frogdude1123' },
   { image: spotify_icon, text: 'frogdude1123', url: 'https://open.spotify.com/user/ckenvyd4xokwet9bbir3hfxn9?si=bbda1b6ab230463b' },
-  { image: reddit_icon, text: 'forgot password lol' },
+  { image: reddit_icon, text: 'forgot password' },
   { image: twitch_icon, text: 'deleted' }
 ];
 
