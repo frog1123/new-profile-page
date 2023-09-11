@@ -40,9 +40,7 @@ const Home: NextPage = () => {
         console.log(value.linkFix);
         if (entry.isIntersecting) entry.target.classList.add('frog-show');
         else {
-
-            entry.target.classList.remove('frog-show');
-          }
+          entry.target.classList.remove('frog-show');
         }
       });
     });
