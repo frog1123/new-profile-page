@@ -37,8 +37,13 @@ const Home: NextPage = () => {
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
+        console.log(value.linkFix);
         if (entry.isIntersecting) entry.target.classList.add('frog-show');
-        else entry.target.classList.remove('frog-show');
+        else {
+
+            entry.target.classList.remove('frog-show');
+          }
+        }
       });
     });
 
