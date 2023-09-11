@@ -46,6 +46,22 @@ const Downloads: NextPage = () => {
               <DownloadContainer name='frogtopia_x_300days' size='340.87MB' text='mediafire' externalUrl='https://www.mediafire.com/file/nu68kyfesd2csgo/frogtopia_x_300days.zip/file' />
               <DownloadContainer name='frogtopia_x_400days' size='469.97MB' text='mediafire' externalUrl='https://www.mediafire.com/file/zcd2h0m5alk8pvi/frogtopia_x_400days.zip/file' />
               <DownloadContainer name='frogtopia_x_500days' size='582.04MB' text='mediafire' externalUrl='https://www.mediafire.com/file/c7cv4abn36k9up5/frogtopia_x_500days.zip/file' />
+              <h1 className='gradient-text tw-text-[18px] tw-font-bold tw-m-auto'>frogtopia ii</h1>
+              <DownloadContainer name='frogtopia ii plans seed 29' size='189.10MB' text='mediafire' externalUrl='https://www.mediafire.com/file/cj4lpyfyhr2lofr/frogtopia_ii_plans_seed_29.zip/file' />
+              <h1 className='gradient-text tw-text-[18px] tw-font-bold tw-m-auto'>main vehicle world</h1>
+              <DownloadContainer
+                name='vehicle-modpack-fabric-1.19.2'
+                size='43.14MB'
+                text='mediafire'
+                externalUrl='https://www.mediafire.com/file/zlf5luue3isn9q4/vehicle-modpack-fabric-1.19.2.zip/file'
+              />
+              <DownloadContainer name='Plastic 1.19.3' size='16.46MB' text='mediafire' externalUrl='https://www.mediafire.com/file/015vn0nqteb5wvd/Plastic_1.19.3.zip/file' />
+              <DownloadContainer name='MAIN_VEHICHLE_WRLD_v1' size='1.17MB' text='mediafire' externalUrl='https://www.mediafire.com/file/pdyk5vq6t0ywnsk/MAIN_VEHICHLE_WRLD_v1.zip/file' />
+              <DownloadContainer name='MAIN_VEHICHLE_WRLD_v1.1' size='5.85MB' text='mediafire' externalUrl='https://www.mediafire.com/file/iib8osmyt1eg4wt/MAIN_VEHICHLE_WRLD_v1.1.zip/file' />
+              <DownloadContainer name='MAIN_VEHICHLE_WRLD_v1.2' size='13.11MB' text='mediafire' externalUrl='https://www.mediafire.com/file/1xi3yys35mjg48r/MAIN_VEHICHLE_WRLD_v1.2.zip/file' />
+              <DownloadContainer name='MAIN_VEHICHLE_WRLD_v1.3' size='13.84MB' text='mediafire' externalUrl='https://www.mediafire.com/file/5w447t5fi8x5qr7/MAIN_VEHICHLE_WRLD_v1.3.zip/file' />
+              <DownloadContainer name='MAIN_VEHICHLE_WRLD_v1.4' size='15.71MB' text='mediafire' externalUrl='https://www.mediafire.com/file/cgj8bsnzddmsihz/MAIN_VEHICHLE_WRLD_v1.4.zip/file' />
+              <DownloadContainer name='MAIN_VEHICHLE_WRLD_v1.5' size='16.37MB' text='mediafire' externalUrl='https://www.mediafire.com/file/2hubox15pmhs99p/MAIN_VEHICHLE_WRLD_v1.5.zip/file' />
             </div>
           </div>
         </div>
